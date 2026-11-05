@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RoboMoCap: a large-scale whole-body motion capture dataset with egocentric vision for robot learning.">
+  <meta name="theme-color" content="#5d4bff">
+  <title>RoboMoCap — Whole-body motion capture for robot learning</title>
+  <link rel="icon" href="assets/favicon.svg?v=20261104-2" type="image/svg+xml">
+  <link rel="preload" href="fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/instrument-serif-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=20261105-3">
+  <script src="content-data.js?v=20261031-7" defer></script><script src="sequence-data.js" defer></script><script src="i18n.js?v=20261105-3" defer></script><script src="distribution.js?v=20261104-1" defer></script><script src="app.js?v=20261105-3" defer></script><script src="sequences.js?v=20261103-1" defer></script><script src="viewer-embed.js?v=20261104-2" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="nav-wrap">
+  <a class="brand" href="#top" aria-label="RoboMoCap home"><span class="brand-symbol" aria-hidden="true"></span><span>RoboMoCap</span></a>
+  <nav class="desktop-nav" aria-label="Main navigation"><a href="#overview">Overview</a><a href="#capture">System</a><a href="#processing">Pipeline</a><a href="#dataset">Dataset</a><a href="#interactive">Examples</a></nav>
+  <div class="nav-actions"><div class="language-switch" role="group" aria-label="Website language"><button data-language="en" aria-pressed="true" lang="en">EN</button><span aria-hidden="true">/</span><button data-language="zh" aria-pressed="false" lang="zh-CN">中</button></div><button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span></button><a class="nav-dataset" href="https://huggingface.co/datasets/BitRobot/robocap-body" target="_blank" rel="noopener noreferrer">Dataset ↗</a></div>
+</div><nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#overview">Overview</a><a href="#capture">System</a><a href="#processing">Pipeline</a><a href="#dataset">Dataset</a><a href="#interactive">Examples</a></nav></header>
+<main id="main">
+  <section class="hero video-hero" id="top" aria-labelledby="project-title">
+    <video class="hero-film" id="hero-film" width="1920" height="1080" autoplay muted loop playsinline preload="metadata" poster="media/hero-film-v8.jpg" aria-hidden="true"><source src="media/hero-film-v8.mp4" type="video/mp4"></video>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-copy wrap">
+      <p class="hero-eyebrow">Egocentric Vision × High-Fidelity Whole-Body Motion</p>
+      <h1 id="project-title">RoboMoCap</h1>
+      <p class="hero-subtitle">A Large-Scale Whole-Body Motion Capture Dataset with Egocentric Vision for Robot Learning</p>
+      <div class="project-links"><a class="button button-primary" href="https://huggingface.co/datasets/BitRobot/robocap-body" target="_blank" rel="noopener noreferrer">Dataset ↗</a><a class="button button-secondary" href="#interactive">Interactive sample ↓</a><span class="resource-pending"><span>Code</span><small>Coming soon</small></span><span class="resource-pending"><span>Paper</span><small>Coming soon</small></span></div>
+    </div>
+    <button class="hero-film-toggle" id="hero-film-toggle" aria-label="Pause background video" hidden>Ⅱ</button>
+  </section>
+  <div class="contributors wrap" aria-label="Contributors">
+    <span>Contributors</span>
+    <a href="https://bitrobot.ai/" target="_blank" rel="noopener noreferrer"><img src="media/reference/bitrobot-logo.webp" alt="BitRobot" width="380" height="95"></a>
+    <a href="https://www.gsi.company/" target="_blank" rel="noopener noreferrer"><img src="media/reference/gsi.webp" alt="GSI" width="200" height="200"></a>
+    <a href="https://magiclab-nus.github.io/" target="_blank" rel="noopener noreferrer"><img src="media/reference/magic-lab-logo.webp" alt="Magic Lab" width="695" height="96"></a>
+    <a href="https://en.nokov.com/" target="_blank" rel="noopener noreferrer"><img src="media/reference/nokov-mocap-logo.svg" alt="NOKOV Motion Capture" width="145" height="31"></a>
+  </div>
+
+  <article class="wrap research-article">
+    <section class="paper-section" id="overview">
+      <p class="section-kicker">About RoboMoCap</p>
+      <h2><span>Egocentric vision.</span><em>High-fidelity whole-body motion.</em></h2>
+      <div class="prose overview-copy"><p>RoboMoCap pairs multimodal first-person observations with optical whole-body motion capture for humanoid robot learning. With six head-mounted and two wrist-mounted cameras, the dataset captures diverse locomotion and loco-manipulation behaviours, from everyday walking to dynamic movements and complex object interactions.</p><p><strong>Beyond what egocentric cameras can see.</strong> While many egocentric datasets focus primarily on hand-object interactions, RoboMoCap emphasises locomotion and loco-manipulation. By pairing first-person observations with high-fidelity optical motion capture, it provides accurate supervision for lower-body movement, foot placement, and whole-body coordination during navigation and object interactions.</p></div>
+      <div class="overview-facts" id="overview-facts" data-localized></div>
+    </section>
+
+    <section class="paper-section" id="capture">
+      <p class="section-kicker">Capture system</p>
+      <h2>Data <em>modalities</em></h2>
+      <div class="modality-gallery">
+        <figure><img class="product-image" src="media/reference/robocap-product-side.png" alt="RoboCap six-camera array" width="3840" height="2894" loading="lazy"><figcaption><span class="modality-source">RoboCap</span><h3>Egocentric sensing</h3><p>Six head-mounted cameras provide complementary forward, downward, and side views, alongside IMU, magnetometer measurements, and WAV audio.</p></figcaption></figure>
+        <figure><img class="product-image" src="media/reference/robowrist-product.png" alt="RoboWrist camera modules" width="1600" height="1600" loading="lazy"><figcaption><span class="modality-source">RoboWrist</span><h3>Wrist sensing</h3><p>Left and right wrist cameras record close-range hand–object interactions, alongside IMU and magnetometer measurements.</p></figcaption></figure>
+        <figure><video class="modality-film body-film" controls autoplay playsinline muted loop preload="metadata" poster="media/modalities/body-tracking.jpg" aria-label="SMPL-X body motion from a balance-recovery recording"><source src="media/modalities/body-tracking.mp4" type="video/mp4"></video><figcaption><span class="modality-source">NOKOV</span><h3>Whole-body motion</h3><p>A 53-marker NOKOV optical mocap setup records whole-body motion at 120 Hz, including leg and foot movement outside the wearable camera views.</p></figcaption></figure>
+        <figure><video class="modality-film" controls autoplay playsinline muted loop preload="metadata" poster="media/activity-manipulation.jpg" aria-label="Pick and place at a table"><source src="media/activity-manipulation.mp4" type="video/mp4"></video><figcaption><span class="modality-source">NOKOV</span><h3>External video</h3><p>NOKOV's third-person video records the participant, manipulated objects, and the surrounding space.</p></figcaption></figure>
+        <figure><video class="modality-film modality-object" controls autoplay playsinline muted loop preload="metadata" poster="media/slack-examples/object-motion.jpg" aria-label="Tracked object motion"><source src="media/slack-examples/object-motion.mp4" type="video/mp4"></video><figcaption><span class="modality-source">NOKOV</span><h3>Object motion</h3><p>Reflective markers track manipulated objects alongside the participant's body motion.</p></figcaption></figure>
+        <figure><video class="modality-film modality-object" controls autoplay playsinline muted loop preload="metadata" poster="media/slack-examples/object-geometry.jpg" aria-label="3D scan of a green cone"><source src="media/slack-examples/object-geometry.mp4" type="video/mp4"></video><figcaption><span class="modality-source">3D scans</span><h3>Object geometry</h3><p>Textured 3D scans preserve the shape and appearance of objects used in the recordings.</p></figcaption></figure>
+        <figure><video class="modality-film" controls autoplay playsinline muted loop preload="metadata" poster="media/modalities/hand-tracking.jpg" aria-label="Observed hand joints projected onto fabric manipulation video"><source src="media/modalities/hand-tracking.mp4" type="video/mp4"></video><figcaption><span class="modality-source">Hand pose</span><h3>Hand pose</h3><p>Hand pose complements wrist video to describe hand movements during interaction.</p></figcaption></figure>
+      </div>
+
+    </section>
+
+    <section class="paper-section" id="processing">
+      <p class="section-kicker">Data processing</p><h2>Capture <em>and processing</em></h2>
+      <div class="prose"><p>RoboCap and RoboWrist record video and inertial measurements. NOKOV measures body and object markers and tracks a rigid marker cluster on the headset. The headset pose and camera calibration place all six head-mounted views in the motion-capture coordinate frame.</p></div>
+      <figure class="capture-location"><img src="media/capture-space.jpg" alt="Optical motion-capture space" loading="lazy"><figcaption><h3>The capture space</h3><p>The participant wears RoboCap and RoboWrist while the NOKOV system records body motion. Reflective markers track the person and objects during the activity.</p></figcaption></figure>
+      <figure class="capture-workflow" id="processing-workflow" tabindex="0" aria-label="Capture, body and hand-pose processing diagram">
+        <svg class="pipeline-diagram" viewBox="0 0 1600 900" role="img" aria-labelledby="pipeline-title pipeline-description">
+          <title id="pipeline-title">Capture, alignment, and pose fusion</title>
+          <desc id="pipeline-description">Camera observations, hand-pose fusion, body reconstruction, and object tracking form one connected pipeline. Transparent overlays show sampled hand, body, and object motion. Colors progress from teal for earlier frames to violet for later frames.</desc>
+          <defs>
+            <marker id="pipeline-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1 7 4 1 7" fill="none" stroke="currentColor" stroke-width="1.2"/></marker>
+            <linearGradient id="pipeline-hand-surface" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f0edff"/><stop offset=".5" stop-color="#d4ccff"/><stop offset="1" stop-color="#9d8ce8"/></linearGradient>
+            <symbol id="pipeline-hand" viewBox="0 0 200 220">
+              <path class="hand-surface" d="M78 208 73 175Q68 151 49 136L27 117Q17 108 24 101Q30 94 39 102L62 121 66 64 65 50Q65 37 73 36Q81 35 83 47L89 93 91 25Q92 13 100 14Q108 15 108 27L109 91 120 38Q123 24 131 27Q138 29 135 43L128 102 146 71Q151 60 158 64Q165 68 159 80L146 123Q142 145 138 164L134 208Z"/>
+              <g class="hand-mesh"><path d="M78 151 81 123 100 118 119 124 133 137 105 183Z M81 123 105 183 100 118 M100 118 105 183 119 124 M119 124 105 183 133 137 M78 151 100 118 M81 123 119 124 M100 118 133 137 M78 151 119 124"/></g>
+              <g class="hand-bones"><path d="M105 183 78 151 59 135 43 119 29 107 M105 183 81 123 78 91 75 65 73 46 M105 183 100 118 100 82 100 54 100 26 M105 183 119 124 125 91 128 63 128 37 M105 183 133 137 142 113 150 91 154 73"/></g>
+              <g class="hand-joints"><circle cx="105" cy="183" r="4"/><circle cx="78" cy="151" r="3"/><circle cx="59" cy="135" r="2.5"/><circle cx="43" cy="119" r="2.5"/><circle cx="29" cy="107" r="3"/><circle cx="81" cy="123" r="3"/><circle cx="78" cy="91" r="2.5"/><circle cx="75" cy="65" r="2.5"/><circle cx="73" cy="46" r="3"/><circle cx="100" cy="118" r="3"/><circle cx="100" cy="82" r="2.5"/><circle cx="100" cy="54" r="2.5"/><circle cx="100" cy="26" r="3"/><circle cx="119" cy="124" r="3"/><circle cx="125" cy="91" r="2.5"/><circle cx="128" cy="63" r="2.5"/><circle cx="128" cy="37" r="3"/><circle cx="133" cy="137" r="3"/><circle cx="142" cy="113" r="2.5"/><circle cx="150" cy="91" r="2.5"/><circle cx="154" cy="73" r="3"/></g>
+            </symbol>
+          </defs>
+          <g class="pipeline-stage"><text x="40" y="36">01</text><text x="76" y="36">Capture</text><text x="360" y="36">02</text><text x="400" y="36">Alignment &amp; fusion</text><text x="1320" y="36">03</text><text x="1360" y="36">Representations</text></g>
+          <g class="pipeline-links" fill="none" marker-end="url(#pipeline-arrow)">
+            <path d="M280 127.5H360"/><path d="M280 365H315V165H360"/>
+            <path d="M280 527.5H330V202.5H360"/><path d="M280 565H466.667"/>
+            <path d="M1160 165H1320"/>
+            <path d="M580 365H605"/><path d="M845 365H1000"/>
+            <path d="M1240 365H1320"/><path d="M706.667 565H893.333"/>
+            <path d="M706.667 540L1000 390"/><path d="M1133.333 565H1320"/>
+            <path d="M280 602.5H310V740H466.667"/><path d="M280 765H466.667"/>
+            <path d="M706.667 765H893.333"/><path d="M1133.333 765H1320"/>
+          </g>
+          <g class="pipeline-source">
+            <g class="pipeline-input" transform="translate(40 90)">
+              <image href="media/capture-action.jpg" width="240" height="150" preserveAspectRatio="xMidYMid slice"/>
+              <text class="pipeline-node-title" x="120" y="174">RoboCap + RoboWrist</text>
+            </g>
+            <g class="pipeline-input" transform="translate(40 290)">
+              <image href="media/pipeline/bimodal-camera.png" width="240" height="150"/>
+              <text class="pipeline-node-title" x="120" y="174">Third-person camera</text>
+            </g>
+            <g class="pipeline-input" transform="translate(40 490)">
+              <image href="media/pipeline/nokov-volume.png" x="10" width="200" height="150"/>
+              <image href="media/pipeline/nokov-product.png" x="156" y="70" width="84" height="80"/>
+              <text class="pipeline-node-title" x="120" y="174">NOKOV</text>
+            </g>
+            <g class="pipeline-input" transform="translate(40 690)">
+              <image href="media/objects/tracked-box.jpg" width="240" height="150" preserveAspectRatio="xMidYMid slice"/>
+              <text class="pipeline-node-title" x="120" y="174">Tracked object</text>
+            </g>
+          </g>
+          <g class="pipeline-visual" data-column="2" data-row="1">
+            <g class="pipeline-filmstrip">
+              <image href="media/sequences/sm43-ego-01.jpg" x="360" y="90" width="72" height="60"/><image href="media/sequences/sm43-ego-02.jpg" x="444" y="90" width="72" height="60"/><image href="media/sequences/sm43-ego-03.jpg" x="528" y="90" width="72" height="60"/>
+              <image href="media/pipeline/body-motion-01.svg" x="360" y="165" width="72" height="75"/><image href="media/pipeline/body-motion-02.svg" x="444" y="165" width="72" height="75"/><image href="media/pipeline/body-motion-03.svg" x="528" y="165" width="72" height="75"/>
+              <path d="M396 158V162M480 158V162M564 158V162"/>
+            </g>
+            <g class="pipeline-timing" aria-label="30 fps video paired with 120 Hz motion capture at matching relative times">
+              <text x="660" y="106">30 fps</text><text x="660" y="236">120 Hz</text>
+              <path class="pipeline-time-axis" d="M750 100H1090M750 230H1090"/>
+              <path class="pipeline-time-pairs" d="M760 113V219M920 113V219M1080 113V219"/>
+              <g class="pipeline-video-samples"><rect x="751" y="91" width="18" height="18" rx="2"/><rect x="911" y="91" width="18" height="18" rx="2"/><rect x="1071" y="91" width="18" height="18" rx="2"/></g>
+              <g class="pipeline-mocap-samples"><circle cx="760" cy="230" r="4"/><circle cx="800" cy="230" r="4"/><circle cx="840" cy="230" r="4"/><circle cx="880" cy="230" r="4"/><circle cx="920" cy="230" r="4"/><circle cx="960" cy="230" r="4"/><circle cx="1000" cy="230" r="4"/><circle cx="1040" cy="230" r="4"/><circle cx="1080" cy="230" r="4"/></g>
+            </g>
+            <text class="pipeline-node-title" x="480" y="264">Frame alignment</text>
+          </g>
+          <g class="pipeline-visual" id="hand-workflow-title" data-column="2" data-row="2">
+            <ellipse class="pipeline-halo" cx="480" cy="418" rx="90" ry="18"/>
+            <use href="#pipeline-hand" x="380" y="289" width="200" height="150" transform="rotate(-12 480 364)"/>
+            <text class="pipeline-node-title" x="480" y="464">Local hand pose</text>
+          </g>
+          <g class="pipeline-visual" data-column="3" data-row="2" transform="translate(-75 0)">
+            <ellipse class="pipeline-halo" cx="800" cy="418" rx="108" ry="18"/>
+            <g class="hand-reference" transform="rotate(-24 755 364)"><use href="#pipeline-hand" x="685" y="294" width="160" height="140"/></g>
+            <use href="#pipeline-hand" x="770" y="294" width="160" height="140"/>
+            <path class="pipeline-correspondence" d="M745 324 825 319M757 308 845 309M760 412 845 412"/>
+            <path class="pipeline-rotation" d="M720 286Q780 249 850 286" marker-end="url(#pipeline-arrow)"/>
+            <text class="pipeline-node-title" x="800" y="464">Procrustes alignment</text>
+          </g>
+          <g class="pipeline-visual pipeline-fusion" data-column="4" data-row="2">
+            <ellipse class="pipeline-halo" cx="1120" cy="420" rx="95" ry="18"/>
+            <use href="#pipeline-hand" x="1023" y="284" width="190" height="165" transform="rotate(17 1120 369)"/>
+            <ellipse class="pipeline-wrist-ring" cx="1115" cy="420" rx="19" ry="8" transform="rotate(17 1115 420)"/>
+            <g class="pipeline-axes" aria-hidden="true"><path d="M1115 420V382M1115 420H1155M1115 420 1091 397"/><circle cx="1115" cy="420" r="3"/></g>
+            <text class="pipeline-node-title" x="1120" y="464">Wrist-pose fusion</text>
+          </g>
+          <g class="pipeline-visual" data-column="2" data-row="3">
+            <image href="media/pipeline/body-joints-transparent.svg" x="466.667" y="490" width="240" height="150"/>
+            <text class="pipeline-node-title" x="586.667" y="664">Body joint reconstruction</text>
+          </g>
+          <g class="pipeline-visual pipeline-body" id="body-workflow-title" data-column="3" data-row="3">
+            <image href="media/pipeline/body-joints-overlay.svg" x="893.333" y="490" width="240" height="150"/>
+            <text class="pipeline-node-title" x="1013.333" y="664">Body motion sequence</text>
+          </g>
+          <g class="pipeline-visual pipeline-object" id="object-workflow-title" data-column="2" data-row="4">
+            <image href="media/pipeline/object-observed-markers.svg" x="466.667" y="690" width="240" height="150"/>
+            <text class="pipeline-node-title" x="586.667" y="864">3D marker tracking</text>
+          </g>
+          <g class="pipeline-visual pipeline-object" data-column="3" data-row="4">
+            <image href="media/pipeline/object-rigid-pose.svg" x="893.333" y="690" width="240" height="150"/>
+            <text class="pipeline-node-title" x="1013.333" y="864">Rigid-body pose</text>
+          </g>
+          <g class="pipeline-results">
+            <g class="pipeline-output" data-output="camera" transform="translate(1320 90)">
+              <image href="media/sequences/sm43-ego-02.jpg" width="240" height="150" preserveAspectRatio="xMidYMid slice"/>
+              <text class="pipeline-node-title" x="120" y="174">Camera observations</text>
+            </g>
+            <g class="pipeline-output" data-output="hand" transform="translate(1320 290)">
+              <image href="media/pipeline/hand-motion-overlay.svg" width="240" height="150"/>
+              <text class="pipeline-node-title" x="120" y="174">World-frame hand pose</text>
+            </g>
+            <g class="pipeline-output" data-output="body" transform="translate(1320 490)">
+              <image href="media/pipeline/body-motion-overlay.svg" width="240" height="150"/>
+              <text class="pipeline-node-title" x="120" y="174">SMPL-X body motion</text>
+            </g>
+            <g class="pipeline-output" data-output="object" transform="translate(1320 690)">
+              <image href="media/pipeline/object-motion-overlay.svg" width="240" height="150"/>
+              <text class="pipeline-node-title" x="120" y="174">Object motion</text>
+            </g>
+          </g>
+        </svg>
+      </figure>
+      <div class="sequence-comparison" id="sequences">
+        <h3>Video and body motion over time</h3>
+        <div id="sequence-tabs" class="sequence-tabs" role="tablist" aria-label="Compare activities" data-localized></div>
+        <div id="sequence-panel" role="tabpanel" data-localized></div>
+      </div>
+      <div class="robot-training" id="robot-training">
+        <h3>Humanoid robot training</h3>
+        <div class="robot-training-videos">
+          <video class="g1-film" autoplay muted loop playsinline controls preload="metadata" poster="media/g1-retargeting/LM39.jpg" aria-label="G1 retargeting: LM39"><source src="media/g1-retargeting/LM39.mp4" type="video/mp4"></video>
+          <video class="g1-film" autoplay muted loop playsinline controls preload="metadata" poster="media/g1-retargeting/D43.jpg" aria-label="G1 retargeting: D43"><source src="media/g1-retargeting/D43.mp4" type="video/mp4"></video>
+          <video class="g1-film" autoplay muted loop playsinline controls preload="metadata" poster="media/g1-retargeting/D54.jpg" aria-label="G1 retargeting: D54"><source src="media/g1-retargeting/D54.mp4" type="video/mp4"></video>
+          <video class="g1-film" autoplay muted loop playsinline controls preload="metadata" poster="media/g1-retargeting/DR08.jpg" aria-label="G1 retargeting: DR08"><source src="media/g1-retargeting/DR08.mp4" type="video/mp4"></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="paper-section" id="dataset">
+      <p class="section-kicker">Dataset organization</p><h2>Dataset <em>structure</em></h2>
+      <p><a class="dataset-link" href="https://huggingface.co/datasets/BitRobot/robocap-body" target="_blank" rel="noopener noreferrer">View dataset ↗</a></p>
+      <div class="prose"><p>RoboMoCap defines 290+ actions across eight categories, with a strong emphasis on locomotion and loco-manipulation. Activities range from walking, turning, and dynamic posture transitions to object transport, environmental interactions, and collaborative tasks.</p><p>The protocols introduce variations in movement speed, direction, terrain, object handling, and carrying configurations. Longer activities combine navigation, reaching, manipulation, and object placement into continuous whole-body motion sequences.</p></div>
+      <div class="protocol-heading" id="collection"><h3>The action taxonomy</h3><p><strong id="action-count" data-localized>293</strong> captured actions <span>/</span> <strong id="family-count" data-localized>8</strong> families</p></div>
+      <div class="family-navigation"><button class="family-scroll" id="family-prev" aria-label="Scroll categories left" aria-controls="family-list" disabled><span aria-hidden="true">←</span></button><div class="family-list" id="family-list" role="group" aria-label="Explore action families"><button data-family="all" aria-pressed="true" aria-controls="activity-cloud">All activities</button><button data-family="P" aria-pressed="false" aria-controls="activity-cloud">Locomotion</button><button data-family="D" aria-pressed="false" aria-controls="activity-cloud">Posture &amp; dynamics</button><button data-family="SM" aria-pressed="false" aria-controls="activity-cloud">Stationary manipulation</button><button data-family="LM" aria-pressed="false" aria-controls="activity-cloud">Locomotion &amp; manipulation</button><button data-family="DR" aria-pressed="false" aria-controls="activity-cloud">Dynamic recovery</button><button data-family="HH" aria-pressed="false" aria-controls="activity-cloud">Human–human interaction</button><button data-family="EC" aria-pressed="false" aria-controls="activity-cloud">Environment-coupled motion</button><button data-family="LH" aria-pressed="false" aria-controls="activity-cloud">Long-horizon tasks</button></div><button class="family-scroll" id="family-next" aria-label="Scroll categories right" aria-controls="family-list"><span aria-hidden="true">→</span></button></div>
+      <div class="activity-cloud-scroll"><div id="activity-cloud" class="activity-cloud" data-scope="all" role="list" aria-label="Representative activities" data-localized></div></div>
+
+      <div class="action-examples" id="action-examples">
+        <h3>Action examples</h3>
+        <div class="example-tabs" id="example-tabs" role="tablist" aria-label="Action categories" data-localized></div>
+        <div class="example-videos" id="example-videos" role="tabpanel" data-localized></div>
+      </div>
+
+      <div class="subsection" id="coverage">
+        <h3 id="coverage-title">Data distribution</h3>
+        <div id="coverage-chart" class="distribution" role="group" aria-labelledby="coverage-title" data-localized></div>
+        <div class="viewer-row distribution-viewer" id="interactive" data-action="HH03">
+          <span id="explore" class="viewer-anchor" aria-hidden="true"></span>
+          <div class="viewer-heading"><div><p class="section-kicker" id="sample-code">Interactive example</p><h3 id="sample-title">HH03 · Handover while walking</h3></div></div>
+          <div class="viewer-stage" id="viewer-stage"><div class="viewer-message" id="viewer-message" role="status" hidden></div></div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </article>
+</main>
+<footer class="wrap footer"><a class="footer-project" href="#top">RoboMoCap</a><span>Research project · 2026</span><a href="#top">Back to top ↑</a></footer>
+<dialog id="asset-dialog" aria-labelledby="asset-dialog-title"><div class="dialog-header"><h2 id="asset-dialog-title"></h2><button class="icon-button" id="close-asset" aria-label="Close media">×</button></div><div id="asset-dialog-content"></div></dialog>
+
+
+</body>
+</html>

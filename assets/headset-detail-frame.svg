@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="430" viewBox="0 0 720 430" role="img" aria-labelledby="title desc">
+<title id="title">RoboCap 设备特写 — 素材占位</title><desc id="desc">说明头戴摄像头的位置、朝向与第一视角的来源。</desc>
+<rect width="720" height="430" fill="#f3f5f8"/>
+<rect x="22" y="22" width="676" height="386" fill="none" stroke="#c4ceda" stroke-width="1" stroke-dasharray="5 6" opacity=".62"/>
+<rect x="144.0" y="130.4" width="432.0" height="170" fill="#f3f5f8" opacity=".97"/>
+
+<text x="36" y="394" fill="#768497" font-family="monospace" font-size="8.064" letter-spacing="1">720 × 430 · MEDIA SLOT</text>
+</svg>

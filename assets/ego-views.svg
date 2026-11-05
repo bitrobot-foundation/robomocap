@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="680" viewBox="0 0 1000 680" role="img" aria-labelledby="title desc">
+<title id="title">第一视角同步视频 — 素材占位</title><desc id="desc">展示同一动作在左右相机中的视觉观测与手物交互。</desc>
+<rect width="1000" height="680" fill="#f3f5f8"/>
+<rect x="30" y="30" width="940" height="620" fill="none" stroke="#c4ceda" stroke-width="1" stroke-dasharray="5 6" opacity=".62"/>
+<rect x="200.0" y="250.39999999999998" width="600.0" height="170" fill="#f3f5f8" opacity=".97"/>
+<g text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+<text x="500.0" y="282.4" fill="#687b96" font-family="monospace" font-size="9.600000000000001" letter-spacing="2">ASSET 05 / PLACEHOLDER</text>
+<text x="500.0" y="322.4" fill="#354358" font-size="30" font-weight="500">第一视角同步视频</text>
+<text x="500.0" y="348.4" fill="#768497" font-size="12" letter-spacing=".6">Egocentric camera views</text>
+<text x="500.0" y="385.4" fill="#354358" font-size="15">同一时刻的第一视角画面</text>
+<text x="500.0" y="409.4" fill="#768497" font-size="15">展示手、物体与周围环境的关系</text>
+</g>
+<text x="44" y="636" fill="#768497" font-family="monospace" font-size="8.399999999999999" letter-spacing="1">1000 × 680 · MEDIA SLOT</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="560" viewBox="0 0 780 560" role="img" aria-labelledby="title desc">
+<title id="title">双人交互样例 — 素材占位</title><desc id="desc">展示多人动作与物体交互的空间关系。</desc>
+<rect width="780" height="560" fill="#f3f5f8"/>
+<rect x="22" y="22" width="736" height="516" fill="none" stroke="#c4ceda" stroke-width="1" stroke-dasharray="5 6" opacity=".62"/>
+<rect x="156.0" y="192.8" width="468.0" height="170" fill="#f3f5f8" opacity=".97"/>
+
+<text x="36" y="524" fill="#768497" font-family="monospace" font-size="8.399999999999999" letter-spacing="1">780 × 560 · MEDIA SLOT</text>
+</svg>

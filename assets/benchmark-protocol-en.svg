@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="480" viewBox="0 0 1200 480" role="img" aria-labelledby="title desc">
+<title id="title">Evaluation protocol and results</title><desc id="desc">Define inputs, targets, splits, and metrics before comparing results.</desc>
+<rect width="1200" height="480" fill="#ffffff"/>
+<g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+<text x="35" y="35" font-size="12" letter-spacing="1.3" fill="#72829a">FIGURE PLACEHOLDER</text>
+<text x="35" y="75" font-size="28" font-weight="500" fill="#2d3e54">Evaluation protocol and results</text>
+<text x="35" y="107" font-size="16" fill="#6c7889">Define inputs, targets, splits, and metrics before comparing results.</text>
+<rect x="35.0" y="140" width="360.6666666666667" height="250" fill="#ffffff" stroke="#b8c7da" stroke-dasharray="5 5"/>
+<path d="M47.0 152L383.6666666666667 378M383.6666666666667 152L47.0 378" stroke="#e5ebf3" stroke-width="1"/>
+<rect x="49.0" y="154" width="28" height="25" fill="#ffffff"/>
+<text x="63.0" y="172" text-anchor="middle" font-size="12" fill="#647b9c">a</text>
+<rect x="47.0" y="217.0" width="336.6666666666667" height="110" fill="#ffffff"/>
+<text x="215.33333333333334" y="252.0" text-anchor="middle" fill="#354b68" font-size="20" font-weight="500">Input observation</text>
+<text x="215.33333333333334" y="296.0" text-anchor="middle" fill="#667485" font-size="16" font-weight="400">Define available modalities and</text><text x="215.33333333333334" y="319.2" text-anchor="middle" fill="#667485" font-size="16" font-weight="400">observations</text>
+<rect x="419.6666666666667" y="140" width="360.6666666666667" height="250" fill="#ffffff" stroke="#b8c7da" stroke-dasharray="5 5"/>
+<path d="M431.6666666666667 152L768.3333333333334 378M768.3333333333334 152L431.6666666666667 378" stroke="#e5ebf3" stroke-width="1"/>
+<rect x="433.6666666666667" y="154" width="28" height="25" fill="#ffffff"/>
+<text x="447.6666666666667" y="172" text-anchor="middle" font-size="12" fill="#647b9c">b</text>
+<rect x="431.6666666666667" y="217.0" width="336.6666666666667" height="110" fill="#ffffff"/>
+<text x="600.0" y="252.0" text-anchor="middle" fill="#354b68" font-size="20" font-weight="500">Reference target</text>
+<text x="600.0" y="296.0" text-anchor="middle" fill="#667485" font-size="16" font-weight="400">Specify inspected supervision</text>
+<rect x="804.3333333333334" y="140" width="360.6666666666667" height="250" fill="#ffffff" stroke="#b8c7da" stroke-dasharray="5 5"/>
+<path d="M816.3333333333334 152L1153.0 378M1153.0 152L816.3333333333334 378" stroke="#e5ebf3" stroke-width="1"/>
+<rect x="818.3333333333334" y="154" width="28" height="25" fill="#ffffff"/>
+<text x="832.3333333333334" y="172" text-anchor="middle" font-size="12" fill="#647b9c">c</text>
+<rect x="816.3333333333334" y="217.0" width="336.6666666666667" height="110" fill="#ffffff"/>
+<text x="984.6666666666667" y="252.0" text-anchor="middle" fill="#354b68" font-size="20" font-weight="500">Protocol and results</text>
+<text x="984.6666666666667" y="296.0" text-anchor="middle" fill="#667485" font-size="16" font-weight="400">Splits, metrics, baselines, and errors</text>
+<text x="35" y="449" font-size="13" fill="#8190a2"></text>
+</g></svg>

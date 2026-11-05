@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">同片段多模态对照 — 素材占位</title><desc id="desc">用同一时间窗口检验相机画面与身体、手部、物体的对应关系。</desc>
+<rect width="1200" height="700" fill="#f3f5f8"/>
+<rect x="30" y="30" width="1140" height="640" fill="none" stroke="#c4ceda" stroke-width="1" stroke-dasharray="5 6" opacity=".62"/>
+<rect x="300.0" y="260.0" width="600" height="170" fill="#f3f5f8" opacity=".97"/>
+
+<text x="44" y="656" fill="#768497" font-family="monospace" font-size="8.399999999999999" letter-spacing="1">1200 × 700 · MEDIA SLOT</text>
+</svg>

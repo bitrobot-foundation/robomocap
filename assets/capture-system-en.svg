@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<title id="title">Annotated capture system</title><desc id="desc">Explain what is worn, what surrounds the participant, and what each sensor records.</desc>
+<rect width="1200" height="560" fill="#ffffff"/>
+<g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+<text x="35" y="35" font-size="12" letter-spacing="1.3" fill="#72829a">FIGURE PLACEHOLDER</text>
+<text x="35" y="75" font-size="28" font-weight="500" fill="#2d3e54">Annotated capture system</text>
+<text x="35" y="107" font-size="16" fill="#6c7889">Explain what is worn, what surrounds the participant, and what each sensor records.</text>
+<rect x="35" y="136" width="550" height="330" fill="#ffffff" stroke="#b8c7da" stroke-dasharray="5 5"/>
+<path d="M47 148L573 454M573 148L47 454" stroke="#e5ebf3" stroke-width="1"/>
+<rect x="49" y="150" width="28" height="25" fill="#ffffff"/>
+<text x="63" y="168" text-anchor="middle" font-size="12" fill="#647b9c">a</text>
+<rect x="47" y="253.0" width="526" height="110" fill="#ffffff"/>
+<text x="310.0" y="288.0" text-anchor="middle" fill="#354b68" font-size="23" font-weight="500">Participant and wearables</text>
+<text x="310.0" y="332.0" text-anchor="middle" fill="#667485" font-size="16" font-weight="400">Label RoboCap, RoboWrist, and body markers</text>
+<rect x="615" y="136" width="550" height="330" fill="#ffffff" stroke="#b8c7da" stroke-dasharray="5 5"/>
+<path d="M627 148L1153 454M1153 148L627 454" stroke="#e5ebf3" stroke-width="1"/>
+<rect x="629" y="150" width="28" height="25" fill="#ffffff"/>
+<text x="643" y="168" text-anchor="middle" font-size="12" fill="#647b9c">b</text>
+<rect x="627" y="253.0" width="526" height="110" fill="#ffffff"/>
+<text x="890.0" y="288.0" text-anchor="middle" fill="#354b68" font-size="23" font-weight="500">Capture volume and motion capture</text>
+<text x="890.0" y="332.0" text-anchor="middle" fill="#667485" font-size="16" font-weight="400">Label camera placement and capture volume</text>
+<text x="35" y="529" font-size="13" fill="#8190a2"></text>
+</g></svg>

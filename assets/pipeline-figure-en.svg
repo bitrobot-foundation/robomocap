@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+<title id="title">From capture to a data sample</title><desc id="desc">Explain how raw streams become an aligned, processed, and inspected sample.</desc>
+<rect width="1200" height="430" fill="#ffffff"/>
+<g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+<text x="35" y="35" font-size="12" letter-spacing="1.3" fill="#72829a">FIGURE PLACEHOLDER</text>
+<text x="35" y="75" font-size="28" font-weight="500" fill="#2d3e54">From capture to a data sample</text>
+<text x="35" y="107" font-size="16" fill="#6c7889">Explain how raw streams become an aligned, processed, and inspected sample.</text>
+<rect x="35.0" y="140" width="260.0" height="200" fill="#ffffff" stroke="#b8c7da" stroke-dasharray="5 5"/>
+<path d="M47.0 152L283.0 328M283.0 152L47.0 328" stroke="#e5ebf3" stroke-width="1"/>
+<rect x="49.0" y="154" width="28" height="25" fill="#ffffff"/>
+<text x="63.0" y="172" text-anchor="middle" font-size="12" fill="#647b9c">a</text>
+<rect x="47.0" y="192.0" width="236.0" height="110" fill="#ffffff"/>
+<text x="165.0" y="227.0" text-anchor="middle" fill="#354b68" font-size="20" font-weight="500">Raw streams</text>
+<text x="165.0" y="271.0" text-anchor="middle" fill="#667485" font-size="16" font-weight="400">Cameras, motion, timestamps</text>
+<path d="M302.0 240.0h16m-5 -5l5 5-5 5" fill="none" stroke="#8da0b8" stroke-width="1.5"/>
+<rect x="325.0" y="140" width="260.0" height="200" fill="#ffffff" stroke="#b8c7da" stroke-dasharray="5 5"/>
+<path d="M337.0 152L573.0 328M573.0 152L337.0 328" stroke="#e5ebf3" stroke-width="1"/>
+<rect x="339.0" y="154" width="28" height="25" fill="#ffffff"/>
+<text x="353.0" y="172" text-anchor="middle" font-size="12" fill="#647b9c">b</text>
+<rect x="337.0" y="192.0" width="236.0" height="110" fill="#ffffff"/>
+<text x="455.0" y="227.0" text-anchor="middle" fill="#354b68" font-size="20" font-weight="500">Alignment</text>
+<text x="455.0" y="271.0" text-anchor="middle" fill="#667485" font-size="16" font-weight="400">Time and coordinate frames</text>
+<path d="M592.0 240.0h16m-5 -5l5 5-5 5" fill="none" stroke="#8da0b8" stroke-width="1.5"/>
+<rect x="615.0" y="140" width="260.0" height="200" fill="#ffffff" stroke="#b8c7da" stroke-dasharray="5 5"/>
+<path d="M627.0 152L863.0 328M863.0 152L627.0 328" stroke="#e5ebf3" stroke-width="1"/>
+<rect x="629.0" y="154" width="28" height="25" fill="#ffffff"/>
+<text x="643.0" y="172" text-anchor="middle" font-size="12" fill="#647b9c">c</text>
+<rect x="627.0" y="192.0" width="236.0" height="110" fill="#ffffff"/>
+<text x="745.0" y="227.0" text-anchor="middle" fill="#354b68" font-size="20" font-weight="500">Processing</text>
+<text x="745.0" y="271.0" text-anchor="middle" fill="#667485" font-size="16" font-weight="400">Body, hands, scene</text><text x="745.0" y="294.2" text-anchor="middle" fill="#667485" font-size="16" font-weight="400">representations</text>
+<path d="M882.0 240.0h16m-5 -5l5 5-5 5" fill="none" stroke="#8da0b8" stroke-width="1.5"/>
+<rect x="905.0" y="140" width="260.0" height="200" fill="#ffffff" stroke="#b8c7da" stroke-dasharray="5 5"/>
+<path d="M917.0 152L1153.0 328M1153.0 152L917.0 328" stroke="#e5ebf3" stroke-width="1"/>
+<rect x="919.0" y="154" width="28" height="25" fill="#ffffff"/>
+<text x="933.0" y="172" text-anchor="middle" font-size="12" fill="#647b9c">d</text>
+<rect x="917.0" y="192.0" width="236.0" height="110" fill="#ffffff"/>
+<text x="1035.0" y="227.0" text-anchor="middle" fill="#354b68" font-size="20" font-weight="500">Inspection and export</text>
+<text x="1035.0" y="271.0" text-anchor="middle" fill="#667485" font-size="16" font-weight="400">Valid takes, labels, files</text>
+<text x="35" y="399" font-size="13" fill="#8190a2"></text>
+</g></svg>

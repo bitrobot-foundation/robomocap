@@ -1,0 +1,18 @@
+{
+  "hand-tracking": {
+    "source": "Slack · #ego-whole-body · 2026-10-03",
+    "url": "https://frodobots.slack.com/archives/C0BMYH6VCTS/p1790974975762259"
+  },
+  "scene-reconstruction": {
+    "source": "Slack · #ego-whole-body · 2026-10-12",
+    "url": "https://frodobots.slack.com/archives/C0BMYH6VCTS/p1791788759572449"
+  },
+  "activity-interaction": {
+    "source": "Slack · #ego-whole-body · HH03 · 2026-10-12",
+    "url": "https://frodobots.slack.com/archives/C0BMYH6VCTS/p1791788759572449"
+  },
+  "activity-transport": {
+    "source": "Slack · #ego-whole-body · EC01 · 2026-10-12",
+    "url": "https://frodobots.slack.com/archives/C0BMYH6VCTS/p1791788759572449"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "headset-detail": {
+    "type": "image",
+    "src": "media/headset-detail.jpg",
+    "title": {
+      "en": "RoboCap",
+      "zh": "RoboCap"
+    }
+  },
+  "wrist-detail": {
+    "type": "image",
+    "src": "media/wrist-detail.jpg",
+    "title": {
+      "en": "RoboWrist",
+      "zh": "RoboWrist"
+    }
+  },
+  "capture-participant": {
+    "type": "image",
+    "src": "media/capture-participant.jpg",
+    "title": {
+      "en": "Wearable capture system",
+      "zh": "可穿戴采集系统"
+    }
+  },
+  "capture-space": {
+    "type": "image",
+    "src": "media/capture-space.jpg",
+    "title": {
+      "en": "Optical motion-capture space",
+      "zh": "光学动捕空间"
+    }
+  },
+  "activity-manipulation": {
+    "type": "video",
+    "src": "media/activity-manipulation.mp4",
+    "poster": "media/activity-manipulation.jpg",
+    "title": {
+      "en": "SM43 · Reach, grasp, and place",
+      "zh": "SM43 · 抓取与放置"
+    }
+  },
+  "activity-transport": {
+    "type": "video",
+    "src": "media/activity-transport.mp4",
+    "poster": "media/activity-transport.jpg",
+    "title": {
+      "en": "LM05 · Carry an object across the room",
+      "zh": "LM05 · 持物穿越房间"
+    }
+  },
+  "activity-interaction": {
+    "type": "video",
+    "src": "media/activity-interaction.mp4",
+    "poster": "media/activity-interaction.jpg",
+    "title": {
+      "en": "HH03 · Handover while walking",
+      "zh": "HH03 · 行走中交接"
+    }
+  },
+  "object-littlebox": {
+    "type": "image",
+    "src": "media/objects/littlebox.png",
+    "title": {
+      "en": "LittleBox · 3D scan",
+      "zh": "小箱体 · 三维扫描"
+    }
+  },
+  "object-cone": {
+    "type": "image",
+    "src": "media/objects/cone.png",
+    "title": {
+      "en": "CcGreen · 3D scan",
+      "zh": "绿色锥体 · 三维扫描"
+    }
+  }
+}

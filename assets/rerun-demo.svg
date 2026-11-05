@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="480" viewBox="0 0 900 480" role="img" aria-labelledby="title desc">
+<title id="title">Rerun 在线演示 — 素材占位</title><desc id="desc">让访问者在同一时间轴检查相机、运动与三维重建。</desc>
+<rect width="900" height="480" fill="#f3f5f8"/>
+<rect x="22" y="22" width="856" height="436" fill="none" stroke="#c4ceda" stroke-width="1" stroke-dasharray="5 6" opacity=".62"/>
+<rect x="180.0" y="154.39999999999998" width="540.0" height="170" fill="#f3f5f8" opacity=".97"/>
+<g text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+<text x="450.0" y="186.39999999999998" fill="#687b96" font-family="monospace" font-size="9.600000000000001" letter-spacing="2">ASSET 09 / PLACEHOLDER</text>
+<text x="450.0" y="226.39999999999998" fill="#354358" font-size="30" font-weight="500">Rerun 在线演示</text>
+<text x="450.0" y="252.39999999999998" fill="#768497" font-size="12" letter-spacing=".6">Interactive episode viewer</text>
+<text x="450.0" y="289.4" fill="#354358" font-size="15">同一时间轴：相机 / 动作 / 三维重建</text>
+<text x="450.0" y="313.4" fill="#768497" font-size="15">支持研究者检查一个真实样例</text>
+</g>
+<text x="36" y="444" fill="#768497" font-family="monospace" font-size="8.399999999999999" letter-spacing="1">900 × 480 · MEDIA SLOT</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="740" viewBox="0 0 1000 740" role="img" aria-labelledby="title desc">
+<title id="title">Research overview</title><desc id="desc">Connect the activity, camera observations, and measured body motion in one example.</desc>
+<rect width="1000" height="740" fill="#ffffff"/>
+<g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+<text x="35" y="35" font-size="12" letter-spacing="1.3" fill="#72829a">FIGURE PLACEHOLDER</text>
+<text x="35" y="75" font-size="28" font-weight="500" fill="#2d3e54">Research overview</text>
+<text x="35" y="107" font-size="16" fill="#6c7889">Connect the activity, camera observations, and measured body motion in one example.</text>
+<rect x="35" y="140" width="440" height="485" fill="#ffffff" stroke="#b8c7da" stroke-dasharray="5 5"/>
+<path d="M47 152L463 613M463 152L47 613" stroke="#e5ebf3" stroke-width="1"/>
+<rect x="49" y="154" width="28" height="25" fill="#ffffff"/>
+<text x="63" y="172" text-anchor="middle" font-size="12" fill="#647b9c">a</text>
+<rect x="47" y="334.5" width="416" height="110" fill="#ffffff"/>
+<text x="255.0" y="369.5" text-anchor="middle" fill="#354b68" font-size="23" font-weight="500">Activity in the capture space</text>
+<text x="255.0" y="413.5" text-anchor="middle" fill="#667485" font-size="16" font-weight="400">The person, task, and scene</text>
+<rect x="525" y="140" width="440" height="225" fill="#ffffff" stroke="#b8c7da" stroke-dasharray="5 5"/>
+<path d="M537 152L953 353M953 152L537 353" stroke="#e5ebf3" stroke-width="1"/>
+<rect x="539" y="154" width="28" height="25" fill="#ffffff"/>
+<text x="553" y="172" text-anchor="middle" font-size="12" fill="#647b9c">b</text>
+<rect x="537" y="204.5" width="416" height="110" fill="#ffffff"/>
+<text x="745.0" y="239.5" text-anchor="middle" fill="#354b68" font-size="23" font-weight="500">Egocentric observations</text>
+<text x="745.0" y="283.5" text-anchor="middle" fill="#667485" font-size="16" font-weight="400">What the cameras observe</text>
+<rect x="525" y="400" width="440" height="225" fill="#ffffff" stroke="#b8c7da" stroke-dasharray="5 5"/>
+<path d="M537 412L953 613M953 412L537 613" stroke="#e5ebf3" stroke-width="1"/>
+<rect x="539" y="414" width="28" height="25" fill="#ffffff"/>
+<text x="553" y="432" text-anchor="middle" font-size="12" fill="#647b9c">c</text>
+<rect x="537" y="464.5" width="416" height="110" fill="#ffffff"/>
+<text x="745.0" y="499.5" text-anchor="middle" fill="#354b68" font-size="23" font-weight="500">Measured body motion</text>
+<text x="745.0" y="543.5" text-anchor="middle" fill="#667485" font-size="16" font-weight="400">The corresponding skeleton and trajectory</text>
+<text x="35" y="709" font-size="13" fill="#8190a2"></text>
+</g></svg>

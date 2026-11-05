@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+<title id="title">采集系统标注图 — 素材占位</title><desc id="desc">解释设备如何佩戴，以及空间中的动捕系统测量什么。</desc>
+<rect width="1200" height="560" fill="#f3f5f8"/>
+<rect x="30" y="30" width="1140" height="500" fill="none" stroke="#c4ceda" stroke-width="1" stroke-dasharray="5 6" opacity=".62"/>
+<rect x="300.0" y="192.8" width="600" height="170" fill="#f3f5f8" opacity=".97"/>
+
+<text x="44" y="516" fill="#768497" font-family="monospace" font-size="8.399999999999999" letter-spacing="1">1200 × 560 · MEDIA SLOT</text>
+</svg>

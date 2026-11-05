@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="430" viewBox="0 0 720 430" role="img" aria-labelledby="title desc">
+<title id="title">RoboWrist close-up — Media placeholder</title><desc id="desc">Show the wrist-mounted view and sensor placement around hand interaction.</desc>
+<rect width="720" height="430" fill="#f3f5f8"/>
+<rect x="22" y="22" width="676" height="386" fill="none" stroke="#c4ceda" stroke-width="1" stroke-dasharray="5 6" opacity=".62"/>
+<rect x="144.0" y="130.4" width="432.0" height="170" fill="#f3f5f8" opacity=".97"/>
+<g text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+<text x="360.0" y="162.4" fill="#687b96" font-family="monospace" font-size="9.216" letter-spacing="2">ASSET 04 / PLACEHOLDER</text>
+<text x="360.0" y="202.4" fill="#354358" font-size="26.639999999999997" font-weight="500">RoboWrist close-up</text>
+<text x="360.0" y="228.4" fill="#768497" font-size="11.52" letter-spacing=".6">RoboWrist / close-range views</text>
+<text x="360.0" y="265.4" fill="#354358" font-size="13.68">Wrist-mounted device and close-range view</text>
+<text x="360.0" y="289.4" fill="#768497" font-size="13.68">Explain how local interactions are observed</text>
+</g>
+<text x="36" y="394" fill="#768497" font-family="monospace" font-size="8.064" letter-spacing="1">720 × 430 · MEDIA SLOT</text>
+</svg>

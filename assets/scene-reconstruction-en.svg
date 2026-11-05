@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="680" viewBox="0 0 1000 680" role="img" aria-labelledby="title desc">
+<title id="title">Objects &amp; scene geometry — Media placeholder</title><desc id="desc">Show bodies, objects, and the scene together in a shared 3D space.</desc>
+<rect width="1000" height="680" fill="#f3f5f8"/>
+<rect x="30" y="30" width="940" height="620" fill="none" stroke="#c4ceda" stroke-width="1" stroke-dasharray="5 6" opacity=".62"/>
+<rect x="200.0" y="250.39999999999998" width="600.0" height="170" fill="#f3f5f8" opacity=".97"/>
+<g text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+<text x="500.0" y="282.4" fill="#687b96" font-family="monospace" font-size="9.600000000000001" letter-spacing="2">ASSET 08 / PLACEHOLDER</text>
+<text x="500.0" y="322.4" fill="#354358" font-size="30" font-weight="500">Objects &amp; scene geometry</text>
+<text x="500.0" y="348.4" fill="#768497" font-size="12" letter-spacing=".6">Objects &amp; scene geometry</text>
+<text x="500.0" y="385.4" fill="#354358" font-size="15">Body, objects, and scene in the same space</text>
+<text x="500.0" y="409.4" fill="#768497" font-size="15">Show the spatial context of the action</text>
+</g>
+<text x="44" y="636" fill="#768497" font-family="monospace" font-size="8.399999999999999" letter-spacing="1">1000 × 680 · MEDIA SLOT</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="680" viewBox="0 0 1000 680" role="img" aria-labelledby="title desc">
+<title id="title">EgoMotion 手部标注样例 — 素材占位</title><desc id="desc">将同一段 EgoMotion 动作的手部轨迹与原始相机画面配对。</desc>
+<rect width="1000" height="680" fill="#f3f5f8"/>
+<rect x="30" y="30" width="940" height="620" fill="none" stroke="#c4ceda" stroke-width="1" stroke-dasharray="5 6" opacity=".62"/>
+<rect x="200.0" y="250.39999999999998" width="600.0" height="170" fill="#f3f5f8" opacity=".97"/>
+
+<text x="44" y="636" fill="#768497" font-family="monospace" font-size="8.399999999999999" letter-spacing="1">1000 × 680 · MEDIA SLOT</text>
+</svg>

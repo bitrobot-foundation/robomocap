@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="320" viewBox="0 0 900 320" role="img" aria-labelledby="title desc">
+<title id="title">Authors &amp; affiliations — Media placeholder</title><desc id="desc">Present the approved author order, affiliations, and authorized institutional marks.</desc>
+<rect width="900" height="320" fill="#f3f5f8"/>
+<rect x="22" y="22" width="856" height="276" fill="none" stroke="#c4ceda" stroke-width="1" stroke-dasharray="5 6" opacity=".62"/>
+<rect x="180.0" y="77.6" width="540.0" height="170" fill="#f3f5f8" opacity=".97"/>
+<g text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+<text x="450.0" y="109.6" fill="#687b96" font-family="monospace" font-size="9.600000000000001" letter-spacing="2">ASSET 15 / PLACEHOLDER</text>
+<text x="450.0" y="149.6" fill="#354358" font-size="30" font-weight="500">Authors &amp; affiliations</text>
+<text x="450.0" y="175.6" fill="#768497" font-size="12" letter-spacing=".6">Authors &amp; affiliations</text>
+<text x="450.0" y="212.6" fill="#354358" font-size="15">Approved authors, affiliations, and logos</text>
+<text x="450.0" y="236.6" fill="#768497" font-size="15">Accurately credit the people behind the project</text>
+</g>
+<text x="36" y="284" fill="#768497" font-family="monospace" font-size="8.399999999999999" letter-spacing="1">900 × 320 · MEDIA SLOT</text>
+</svg>

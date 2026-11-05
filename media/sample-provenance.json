@@ -1,0 +1,135 @@
+{
+  "source": "https://www.modelscope.cn/datasets/untuitivist/EgoMotionActions",
+  "source_path": "EgoMotionActions/20261020/HH03/20261020_072650_session10",
+  "session": "20261020_072650_session10",
+  "action": "HH03 / Handover while walking",
+  "source_interval_seconds": [
+    14,
+    26
+  ],
+  "sdk_version": "0.35.0",
+  "camera_fps": 30,
+  "rerun_image_fps": 15,
+  "preview_frames": 360,
+  "csv_to_meters": 0.001,
+  "trc_to_meters": 0.001,
+  "mocap_hz": 120,
+  "mocap_per_camera_frame": 4,
+  "camera_frame_offset": 0,
+  "alignment_status": "Nominal frame mapping only; source has missing timestamps and dropped frames; cross-device fine synchronization has not been reviewed.",
+  "bodies": [
+    "Body0",
+    "Body1"
+  ],
+  "object_marker_tracks": [
+    "LittleBox4",
+    "LittleBox6"
+  ],
+  "missing_markers": "Omitted per frame, without interpolation. No synthetic object surfaces.",
+  "body_source": "NOKOV CSV XToGlobal/YToGlobal/ZToGlobal positions. Body0 BVH has invalid zero bone offsets and is excluded.",
+  "camera_calibration": {
+    "device_id": "c9205ac6e17d2d5c",
+    "sources": [
+      {
+        "path": "raw_calibration/c9205ac6e17d2d5c/camera_calibration_server.json",
+        "bytes": 14378,
+        "sha256": "f59b0e7d85748c37c136c9d052e3671ad4a0fcbcb748da72a136c92228ada9d5"
+      },
+      {
+        "path": "raw_calibration/c9205ac6e17d2d5c/mocap_extrinsic.yaml",
+        "bytes": 8193,
+        "sha256": "8ab7edf328d426203eb6198876d53a15046c25c176c1cb99699472412f28dc53"
+      }
+    ],
+    "tracker_source": "mocap/mocap-HH03-S01-lvaoshan-01p1-Tracker0.csv",
+    "tracker_markers_source": "mocap/mocap-HH03-S01-lvaoshan-01p1-Tracker0.trc",
+    "registration": {
+      "calibration_to_recording_marker_order_one_based": [
+        2,
+        4,
+        3,
+        1
+      ],
+      "T_csv_rigid": [
+        [
+          -0.9678614383340175,
+          0.03445272467629266,
+          -0.24911291806806518,
+          -0.19615563318956225
+        ],
+        [
+          0.11522766287427916,
+          0.9412269155538188,
+          -0.3175129590199083,
+          0.007746186069322579
+        ],
+        [
+          0.22353259693954797,
+          -0.3360132485474733,
+          -0.9149471432307094,
+          -0.002197796612268224
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "method": "Unique pairwise-distance match, followed by proper rigid fit of median observed markers in the CSV local frame",
+      "marker_pair_distance_max_difference_mm": 4.338140704835333,
+      "next_best_pair_distance_difference_mm": 20.541031234565992,
+      "marker_fit_rms_median_mm": 2.348643144093243,
+      "marker_fit_rms_max_mm": 2.823701296505133,
+      "verified_frames": 360,
+      "camera_pose_chain": "T_world_csv @ T_csv_rigid @ T_rigid_cam"
+    },
+    "image_planes": "Six equidistant-undistorted perspective crops, 480x270, RDF coordinates, displayed 0.22 m from each camera. Original fisheye images remain in the 2D panels.",
+    "calibration_recording_timing_applied": false
+  },
+  "video_streams": [
+    "left_front",
+    "right_front",
+    "left_eye",
+    "right_eye",
+    "left",
+    "right",
+    "wrist_left",
+    "wrist_right",
+    "third_person"
+  ],
+  "video_source_files": {
+    "left_front": "robocap_segment1_video_left_front.mp4",
+    "right_front": "robocap_segment1_video_right_front.mp4",
+    "left_eye": "robocap_segment1_video_left_eye.mp4",
+    "right_eye": "robocap_segment1_video_right_eye.mp4",
+    "left": "robocap_segment1_video_left.mp4",
+    "right": "robocap_segment1_video_right.mp4",
+    "wrist_left": "robowrist_cc5681142208e29a_left/robowrist_segment1_video_left_down.mp4",
+    "wrist_right": "robowrist_a85418f7d807dff9_right/robowrist_segment1_video_right_down.mp4",
+    "third_person": "mocap/mocap-HH03-S01-lvaoshan-01p1-1.mp4"
+  },
+  "viewer_layout": {
+    "left": [
+      "body_and_object_motion",
+      "third_person"
+    ],
+    "right": {
+      "rows": 4,
+      "columns": 2,
+      "streams": [
+        "left_front",
+        "right_front",
+        "left_eye",
+        "right_eye",
+        "left",
+        "right",
+        "wrist_left",
+        "wrist_right"
+      ]
+    },
+    "camera_axis_arrows": false,
+    "camera_abbreviation_labels": false
+  },
+  "rrd_bytes": 36236048
+}

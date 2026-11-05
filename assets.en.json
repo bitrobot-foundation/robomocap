@@ -1,0 +1,339 @@
+{
+  "launch-film": {
+    "name": "Project teaser",
+    "purpose": "Follow one activity from capture to camera views and 3D motion.",
+    "lines": [
+      "Project teaser",
+      "Follow one activity from capture to camera views and 3D motion."
+    ],
+    "content": "Suggested 30–60-second edit: establish the real action, then show camera observations and 3D output. Use one inspected episode, readable modality labels, captions, and a silent poster.",
+    "source": "Paper draft, inspected outputs, and release manifest; current capture material is reference only.",
+    "format": "16:9 video",
+    "panels": [
+      {
+        "name": "Real activity",
+        "meaning": "Establish the scene and task"
+      },
+      {
+        "name": "Camera observations",
+        "meaning": "Show the same action from the cameras"
+      },
+      {
+        "name": "Motion in 3D",
+        "meaning": "Connect motion and annotations"
+      }
+    ]
+  },
+  "capture-rig": {
+    "name": "Capture setup",
+    "purpose": "Show the participant, wearable devices, motion-capture markers, and recording space.",
+    "lines": [
+      "Participant + wearable devices + motion-capture space",
+      "Explain how the data is recorded"
+    ],
+    "content": "Use an actual collection photo with clear labels for the head and wrist devices and motion-capture markers. Device locations in an illustration must not be presented as verified calibration parameters.",
+    "source": "New on-site photography; hardware labels reviewed with Aaron",
+    "format": "Photo or annotated diagram · square / portrait"
+  },
+  "headset-detail": {
+    "name": "RoboCap close-up",
+    "purpose": "Show the headset cameras and how the first-person observations are captured.",
+    "lines": [
+      "Headset and camera placement",
+      "Explain the source of the egocentric views"
+    ],
+    "content": "Show the front and side of the device with simple camera-direction labels. Confirm camera count, resolution, and frame rate with the technical team before publication.",
+    "source": "On-site device photos or approved hardware product images",
+    "format": "Photo / diagram · landscape"
+  },
+  "wrist-detail": {
+    "name": "RoboWrist close-up",
+    "purpose": "Show the wrist-mounted view and sensor placement around hand interaction.",
+    "lines": [
+      "Wrist-mounted device and close-range view",
+      "Explain how local interactions are observed"
+    ],
+    "content": "Show how the device is worn and what its cameras see, using the hardware version used in the actual collection.",
+    "source": "Device photos; hardware version confirmed by the research team",
+    "format": "Photo / diagram · landscape"
+  },
+  "ego-views": {
+    "name": "First-person camera views",
+    "purpose": "Show matched camera observations of the same hand–object interaction.",
+    "lines": [
+      "Matched first-person camera views",
+      "Show hands, objects, and surrounding context"
+    ],
+    "content": "Select a clear segment from an episode with complete reconstruction. Show camera views side by side and use the same segment in the body, hand, and scene tabs.",
+    "source": "A representative episode selected by the research team",
+    "format": "Paired video · suggested 10–15 second loop"
+  },
+  "body-motion": {
+    "name": "Whole-body reconstruction",
+    "purpose": "Connect the recorded action to a reconstructed body pose and trajectory.",
+    "lines": [
+      "Recorded action alongside body reconstruction",
+      "Show whole-body posture and motion"
+    ],
+    "content": "Use a quality-checked body mesh or skeleton render matching the first-person clip. The paper will define the final representation, such as SMPL-X or MHR.",
+    "source": "Body reconstruction approved by the research team",
+    "format": "Body mesh / skeleton render aligned with camera views"
+  },
+  "hand-tracking": {
+    "name": "EgoMotion hand annotations",
+    "purpose": "Pair hand tracks with the original camera observations from the same EgoMotion recording.",
+    "lines": [
+      "Hand mesh and camera reprojection",
+      "Show fine interaction and tracking output"
+    ],
+    "content": "Inspected hand tracks and camera reprojections from the same episode and time window as the body and object views.",
+    "source": "Research-team-approved EgoMotion hand outputs",
+    "format": "Hand close-up and reprojection comparison · final output pending"
+  },
+  "scene-reconstruction": {
+    "name": "Objects & scene geometry",
+    "purpose": "Show bodies, objects, and the scene together in a shared 3D space.",
+    "lines": [
+      "Body, objects, and scene in the same space",
+      "Show the spatial context of the action"
+    ],
+    "content": "Combine object meshes and trajectories, body motion, and scene reconstruction in one view. Use the same episode as the other modality tabs.",
+    "source": "A preprocessed reconstruction sample",
+    "format": "Combined 3D render · suggested 10–15 seconds"
+  },
+  "rerun-demo": {
+    "name": "Interactive Rerun viewer",
+    "purpose": "Let researchers inspect camera views, motion, and reconstruction on one timeline.",
+    "lines": [
+      "Camera views, motion, and reconstruction",
+      "Inspect one real episode on a shared timeline"
+    ],
+    "content": "The working five-second P03 / session 235 RRD contains two camera views, a BVH skeleton, and 53 TRC markers. Frame-rate alignment is provisional; fine synchronization is not yet reviewed.",
+    "source": "ModelScope EgoMotionActions and robocap-rerun-tools",
+    "format": "Same-origin Rerun 0.35.0 viewer and RRD file"
+  },
+  "activity-manipulation": {
+    "name": "Everyday manipulation",
+    "purpose": "Show how hands, objects, and whole-body posture work together.",
+    "lines": [
+      "A real tabletop manipulation example",
+      "Show coordinated hand, body, and object motion"
+    ],
+    "content": "Choose a representative tabletop activity with third-person footage and matching reconstruction. Use the task name from the final annotations.",
+    "source": "Collection footage paired with a processed episode",
+    "format": "Capture / reconstruction pair · short landscape video"
+  },
+  "activity-transport": {
+    "name": "Object transport",
+    "purpose": "Show locomotion, body pose, and the movement of a carried object together.",
+    "lines": [
+      "A real carrying or object-transport example",
+      "Show full-body motion and object interaction"
+    ],
+    "content": "Choose a carrying sequence with meaningful displacement, showing the whole body rather than only the hands. Confirm the required modalities are complete.",
+    "source": "Collection footage paired with a processed episode",
+    "format": "Third-person view + reconstruction · short landscape video"
+  },
+  "activity-interaction": {
+    "name": "Human interaction",
+    "purpose": "Show the spatial relationships between multiple people and shared objects.",
+    "lines": [
+      "A real two-person interaction example",
+      "Show coordinated actions in a shared scene"
+    ],
+    "content": "Select a clear segment from the shared two-person reconstruction samples and confirm it is approved for the release.",
+    "source": "Research-team-provided two-person reconstruction",
+    "format": "Two-person scene / reconstruction · short landscape video"
+  },
+  "pipeline-figure": {
+    "name": "From capture to a data sample",
+    "purpose": "Explain how raw streams become an aligned, processed, and inspected sample.",
+    "lines": [
+      "From capture to a data sample",
+      "Explain how raw streams become an aligned, processed, and inspected sample."
+    ],
+    "content": "Final processing description or scripts; stream clocks, temporal/spatial calibration, output representations, and quality filters. Distinguish measured signals from inferred outputs and name key file formats.",
+    "source": "Paper draft, inspected outputs, and release manifest; current capture material is reference only.",
+    "format": "Editable vector or high-resolution figure with matching panel labels and caption.",
+    "panels": [
+      {
+        "name": "Raw streams",
+        "meaning": "Cameras, motion, timestamps"
+      },
+      {
+        "name": "Alignment",
+        "meaning": "Time and coordinate frames"
+      },
+      {
+        "name": "Processing",
+        "meaning": "Body, hands, scene representations"
+      },
+      {
+        "name": "Inspection and export",
+        "meaning": "Valid takes, labels, files"
+      }
+    ]
+  },
+  "dataset-statistics": {
+    "name": "Released dataset statistics",
+    "purpose": "Describe coverage, duration, and splits from the actual release manifest.",
+    "lines": [
+      "Released dataset statistics",
+      "Describe coverage, duration, and splits from the actual release manifest."
+    ],
+    "content": "Deduplicated release manifest: episode IDs, valid start/end times, task labels, anonymous subject IDs, scene IDs, available modalities, and train/validation/test splits. Agree on counting rules before calculating coverage and distributions.",
+    "source": "Paper draft, inspected outputs, and release manifest; current capture material is reference only.",
+    "format": "Editable vector or high-resolution figure with matching panel labels and caption.",
+    "panels": [
+      {
+        "name": "Task coverage",
+        "meaning": "Needs valid takes and duration per category"
+      },
+      {
+        "name": "Sequence duration",
+        "meaning": "Needs deduplicated sequence start/end times"
+      },
+      {
+        "name": "Subjects, scenes, and splits",
+        "meaning": "Needs anonymous IDs, scenes, and split definitions"
+      }
+    ]
+  },
+  "contributors": {
+    "name": "Authors & affiliations",
+    "purpose": "Present the approved author order, affiliations, and authorized institutional marks.",
+    "lines": [
+      "Approved authors, affiliations, and logos",
+      "Accurately credit the people behind the project"
+    ],
+    "content": "Use the final author order and institutional names from the paper, together with approved SVG logos. Add the official project title and BibTeX when confirmed.",
+    "source": "Paper author list and approved institution logos",
+    "format": "Author text and institutional SVG marks"
+  },
+  "paper-overview": {
+    "name": "Research overview",
+    "purpose": "Connect the activity, camera observations, and measured body motion in one example.",
+    "lines": [
+      "Research overview",
+      "Connect the activity, camera observations, and measured body motion in one example."
+    ],
+    "content": "One representative episode: a scene photograph, head-camera view, measured motion, episode ID, and time window. Include only modalities confirmed for the release.",
+    "source": "Paper draft, inspected outputs, and release manifest; current capture material is reference only.",
+    "format": "Editable vector or high-resolution figure with matching panel labels and caption.",
+    "panels": [
+      {
+        "name": "Activity in the capture space",
+        "meaning": "The person, task, and scene"
+      },
+      {
+        "name": "Egocentric observations",
+        "meaning": "What the cameras observe"
+      },
+      {
+        "name": "Measured body motion",
+        "meaning": "The corresponding skeleton and trajectory"
+      }
+    ]
+  },
+  "capture-system": {
+    "name": "Annotated capture system",
+    "purpose": "Explain what is worn, what surrounds the participant, and what each sensor records.",
+    "lines": [
+      "Annotated capture system",
+      "Explain what is worn, what surrounds the participant, and what each sensor records."
+    ],
+    "content": "Front/side wearable photographs, device close-ups, a room overview, and verified sensor placement. Label RoboCap, RoboWrist, body markers, and capture volume; do not estimate specifications or accuracy.",
+    "source": "Paper draft, inspected outputs, and release manifest; current capture material is reference only.",
+    "format": "Editable vector or high-resolution figure with matching panel labels and caption.",
+    "panels": [
+      {
+        "name": "Participant and wearables",
+        "meaning": "Label RoboCap, RoboWrist, and body markers"
+      },
+      {
+        "name": "Capture volume and motion capture",
+        "meaning": "Label camera placement and capture volume"
+      }
+    ]
+  },
+  "matched-modalities": {
+    "name": "One episode, multiple representations",
+    "purpose": "Inspect camera, body, hand, and object correspondence in one time window.",
+    "lines": [
+      "One episode, multiple representations",
+      "Inspect camera, body, hand, and object correspondence in one time window."
+    ],
+    "content": "One inspected episode with head/wrist video, body motion, hand tracks, and object/scene representation. Include a common time window and coordinate documentation; do not combine different recordings as synchronized evidence.",
+    "source": "Paper draft, inspected outputs, and release manifest; current capture material is reference only.",
+    "format": "Editable vector or high-resolution figure with matching panel labels and caption.",
+    "panels": [
+      {
+        "name": "Body and scene",
+        "meaning": "An overview of the action"
+      },
+      {
+        "name": "Head cameras",
+        "meaning": "Egocentric observations"
+      },
+      {
+        "name": "Wrist cameras",
+        "meaning": "Close-range interaction"
+      },
+      {
+        "name": "Hand tracking",
+        "meaning": "Annotations against video"
+      },
+      {
+        "name": "Object motion",
+        "meaning": "Object pose and interaction"
+      }
+    ]
+  },
+  "benchmark-protocol": {
+    "name": "Evaluation protocol and results",
+    "purpose": "Define inputs, targets, splits, and metrics before comparing results.",
+    "lines": [
+      "Evaluation protocol and results",
+      "Define inputs, targets, splits, and metrics before comparing results."
+    ],
+    "content": "Paper-approved tasks, inputs, reference targets, evaluation units, splits, baselines, metrics, and reproducible result files. State metric direction and protocol version; leave unmeasured results empty.",
+    "source": "Paper draft, inspected outputs, and release manifest; current capture material is reference only.",
+    "format": "Editable vector or high-resolution figure with matching panel labels and caption.",
+    "panels": [
+      {
+        "name": "Input observation",
+        "meaning": "Define available modalities and observations"
+      },
+      {
+        "name": "Reference target",
+        "meaning": "Specify inspected supervision"
+      },
+      {
+        "name": "Protocol and results",
+        "meaning": "Splits, metrics, baselines, and errors"
+      }
+    ]
+  },
+  "capture-replay": {
+    "name": "Development capture replay",
+    "purpose": "Show camera, skeleton, and marker views in the capture tools. This is not the final teaser.",
+    "lines": [
+      "Camera, skeleton, and marker views",
+      "Development capture recording"
+    ],
+    "content": "A 12-second development replay. It is not evidence of final reconstruction accuracy and is a separate recording from P03.",
+    "source": "Feishu · Ego2Motion Data Collection",
+    "format": "1280 × 696 MP4"
+  },
+  "hand-method-reference": {
+    "name": "Hand-tracking method preview",
+    "purpose": "Relate hand keypoints to the corresponding real camera observations.",
+    "lines": [
+      "Hand mesh and camera reprojection",
+      "Show fine interaction and tracking output"
+    ],
+    "content": "This four-view hand-keypoint preview was shared by GSI on Slack. It uses an in-the-wild recording outside the EgoMotion motion-capture set. The final dataset hand-reconstruction clip is still pending.",
+    "source": "GSI method demonstration shared from Google Drive on Slack; the later mocap preview thread is linked separately.",
+    "format": "Hand close-up and reprojection comparison · final output pending"
+  }
+}

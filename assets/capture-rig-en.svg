@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="940" viewBox="0 0 860 940" role="img" aria-labelledby="title desc">
+<title id="title">Capture setup — Media placeholder</title><desc id="desc">Show the participant, wearable devices, motion-capture markers, and recording space.</desc>
+<rect width="860" height="940" fill="#f3f5f8"/>
+<rect x="22" y="22" width="816" height="896" fill="none" stroke="#c4ceda" stroke-width="1" stroke-dasharray="5 6" opacity=".62"/>
+<rect x="172.0" y="375.2" width="516.0" height="170" fill="#f3f5f8" opacity=".97"/>
+<g text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+<text x="430.0" y="407.2" fill="#687b96" font-family="monospace" font-size="9.600000000000001" letter-spacing="2">ASSET 02 / PLACEHOLDER</text>
+<text x="430.0" y="447.2" fill="#354358" font-size="30" font-weight="500">Capture setup</text>
+<text x="430.0" y="473.2" fill="#768497" font-size="12" letter-spacing=".6">Capture setup</text>
+<text x="430.0" y="510.2" fill="#354358" font-size="15">Participant + wearable devices + motion-capture space</text>
+<text x="430.0" y="534.2" fill="#768497" font-size="15">Explain how the data is recorded</text>
+</g>
+<text x="36" y="904" fill="#768497" font-family="monospace" font-size="8.399999999999999" letter-spacing="1">860 × 940 · MEDIA SLOT</text>
+</svg>

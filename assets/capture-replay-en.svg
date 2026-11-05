@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="696" viewBox="0 0 1280 696" role="img" aria-labelledby="title desc">
+<title id="title">Development capture replay — Media placeholder</title><desc id="desc">Show camera, skeleton, and marker views in the capture tools. This is not the final teaser.</desc>
+<rect width="1280" height="696" fill="#f3f5f8"/>
+<rect x="30" y="30" width="1220" height="636" fill="none" stroke="#c4ceda" stroke-width="1" stroke-dasharray="5 6" opacity=".62"/>
+<rect x="340.0" y="258.08" width="600" height="170" fill="#f3f5f8" opacity=".97"/>
+<g text-anchor="middle" font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+<text x="640.0" y="290.08" fill="#687b96" font-family="monospace" font-size="9.600000000000001" letter-spacing="2">ASSET 20 / PLACEHOLDER</text>
+<text x="640.0" y="330.08" fill="#354358" font-size="30" font-weight="500">Development capture replay</text>
+<text x="640.0" y="356.08" fill="#768497" font-size="12" letter-spacing=".6">Development capture replay</text>
+<text x="640.0" y="393.08" fill="#354358" font-size="15">Camera, skeleton, and marker views</text>
+<text x="640.0" y="417.08" fill="#768497" font-size="15">Development capture recording</text>
+</g>
+<text x="44" y="652" fill="#768497" font-family="monospace" font-size="8.399999999999999" letter-spacing="1">1280 × 696 · MEDIA SLOT</text>
+</svg>

@@ -1,0 +1,472 @@
+[
+  {
+    "id": "launch-film",
+    "name": "项目发布视频",
+    "title": "Project teaser",
+    "purpose": "由一段真实动作过渡到多路观测及三维表示。",
+    "lines": [
+      "项目发布视频",
+      "由一段真实动作过渡到多路观测及三维表示。"
+    ],
+    "content": "建议先剪 30–60 秒：真实动作开场，过渡到相机画面与三维结果。整段使用同一条经过质检的 episode；附带可读模态标签，输出字幕与无声封面。",
+    "source": "论文草稿、正式处理结果与发布清单；现有采集材料作参考。",
+    "replacement": "launch-film.mp4",
+    "format": "16:9 视频",
+    "width": 1280,
+    "height": 640,
+    "theme": "light",
+    "layout": "teaser",
+    "panels": [
+      {
+        "name": "真实动作",
+        "meaning": "建立场景和任务"
+      },
+      {
+        "name": "相机观测",
+        "meaning": "呈现同一动作的视角"
+      },
+      {
+        "name": "三维运动",
+        "meaning": "对应测得的运动和标注"
+      }
+    ]
+  },
+  {
+    "id": "capture-rig",
+    "name": "采集装置全景",
+    "title": "Capture setup",
+    "purpose": "交代采集者佩戴的设备、动捕标记与真实实验空间。",
+    "lines": [
+      "采集者 + RoboCap / RoboWrist + 动捕环境",
+      "说明数据是如何被采集的"
+    ],
+    "content": "使用一张能看清采集者和空间的现场照片，标注头部、腕部设备及动捕标记。避免把示意位置误当作已经确认的硬件标定参数。",
+    "source": "现场重新拍摄，Aaron 协助核对标注",
+    "replacement": "capture-rig.webp",
+    "format": "照片或带标注示意图 · 近方形 / 竖版",
+    "width": 860,
+    "height": 940,
+    "theme": "light"
+  },
+  {
+    "id": "headset-detail",
+    "name": "RoboCap 设备特写",
+    "title": "RoboCap / egocentric cameras",
+    "purpose": "说明头戴摄像头的位置、朝向与第一视角的来源。",
+    "lines": [
+      "头戴设备及摄像头位置",
+      "说明第一视角观测的来源"
+    ],
+    "content": "展示设备正面和侧面，可加入精简的相机朝向标注；具体相机数、分辨率和帧率待技术人员核对。",
+    "source": "现场设备照片或获授权的硬件产品图",
+    "replacement": "headset-detail.webp",
+    "format": "照片 / 示意图 · 横版",
+    "width": 720,
+    "height": 430,
+    "theme": "light"
+  },
+  {
+    "id": "wrist-detail",
+    "name": "RoboWrist 设备特写",
+    "title": "RoboWrist / close-range views",
+    "purpose": "说明近手部视角与惯性传感器在动作采集中的位置。",
+    "lines": [
+      "腕部设备与近手部视角",
+      "说明局部交互信息的采集方式"
+    ],
+    "content": "展示设备佩戴方式及其相机视野，使用与正式数据采集一致的设备版本。",
+    "source": "现场设备照片，研究团队确认版本",
+    "replacement": "wrist-detail.webp",
+    "format": "照片 / 示意图 · 横版",
+    "width": 720,
+    "height": 430,
+    "theme": "light"
+  },
+  {
+    "id": "ego-views",
+    "name": "第一视角同步视频",
+    "title": "Egocentric camera views",
+    "purpose": "展示同一动作在左右相机中的视觉观测与手物交互。",
+    "lines": [
+      "同一时刻的第一视角画面",
+      "展示手、物体与周围环境的关系"
+    ],
+    "content": "从一个有完整重建结果的 episode 选择清晰片段，将相机画面并排展示。该样例应与身体、手部和场景页签使用同一段动作。",
+    "source": "研究团队提供的代表性 episode",
+    "replacement": "ego-views.mp4",
+    "format": "配对视频 · 10–15 秒循环样例",
+    "width": 1000,
+    "height": 680,
+    "theme": "dark"
+  },
+  {
+    "id": "body-motion",
+    "name": "全身动作重建视频",
+    "title": "Whole-body reconstruction",
+    "purpose": "将视频中的真实动作与重建人体姿态对应起来。",
+    "lines": [
+      "真实动作与人体重建对照",
+      "展示全身姿态和运动轨迹"
+    ],
+    "content": "使用完成质检的人体网格或骨架渲染，与第一视角页签选择同一片段。SMPL-X / MHR 等最终表示由论文确认。",
+    "source": "研究团队确认的身体重建结果",
+    "replacement": "body-motion.mp4",
+    "format": "人体网格 / 骨架渲染 · 与相机画面对齐",
+    "width": 1000,
+    "height": 680,
+    "theme": "dark"
+  },
+  {
+    "id": "hand-tracking",
+    "name": "EgoMotion 手部标注样例",
+    "title": "Hand tracking",
+    "purpose": "将同一段 EgoMotion 动作的手部轨迹与原始相机画面配对。",
+    "lines": [
+      "手部网格 + 相机重投影",
+      "呈现精细交互与跟踪结果"
+    ],
+    "content": "需要已质检的手部轨迹与相机重投影，并与身体和物体视图使用相同 episode、时间窗口。",
+    "source": "研究团队确认的 EgoMotion 手部处理结果",
+    "replacement": "hand-tracking.mp4",
+    "format": "手部近景与重投影对照 · 待最终结果",
+    "width": 1000,
+    "height": 680,
+    "theme": "dark"
+  },
+  {
+    "id": "scene-reconstruction",
+    "name": "物体与场景重建视频",
+    "title": "Objects & scene geometry",
+    "purpose": "让观众理解人体、物体和场景之间的三维空间关系。",
+    "lines": [
+      "人体、物体与场景的共同空间",
+      "展示动作发生的三维上下文"
+    ],
+    "content": "将物体网格、运动轨迹、人体和场景重建呈现在同一视图中，使用与其他模态相同的 episode。",
+    "source": "已完成预处理的重建样例",
+    "replacement": "scene-reconstruction.mp4",
+    "format": "3D 组合渲染 · 10–15 秒",
+    "width": 1000,
+    "height": 680,
+    "theme": "dark"
+  },
+  {
+    "id": "rerun-demo",
+    "name": "Rerun 在线演示",
+    "title": "Interactive episode viewer",
+    "purpose": "让访问者在同一时间轴检查相机、运动与三维重建。",
+    "lines": [
+      "同一时间轴：相机 / 动作 / 三维重建",
+      "支持研究者检查一个真实样例"
+    ],
+    "content": "已接入真实 P03 / session 235 的五秒 RRD 样本：两路相机、BVH 骨架和 53 个 TRC 标记点。临时按帧率比对齐，细同步待复核。",
+    "source": "ModelScope EgoMotionActions 与 robocap-rerun-tools",
+    "replacement": "egomotion-p03.rrd",
+    "format": "同源 Rerun 0.35.0 + RRD 文件",
+    "width": 900,
+    "height": 480,
+    "theme": "dark"
+  },
+  {
+    "id": "activity-manipulation",
+    "name": "桌面操作样例",
+    "title": "Everyday manipulation",
+    "purpose": "展示双手、物体和全身姿态之间的联系。",
+    "lines": [
+      "桌面操作的真实样例",
+      "展示手、物体与身体的协同"
+    ],
+    "content": "选择代表性的桌面动作，最好同时有第三人称现场画面和相应重建。动作名称以最终任务标注为准。",
+    "source": "采集现场 + 对应的处理后 episode",
+    "replacement": "activity-manipulation.mp4",
+    "format": "现场与重建配对 · 横版短视频",
+    "width": 780,
+    "height": 560,
+    "theme": "light"
+  },
+  {
+    "id": "activity-transport",
+    "name": "搬运与移动样例",
+    "title": "Object transport",
+    "purpose": "展示位移、身体姿态与被搬物体的共同运动。",
+    "lines": [
+      "搬运或移动物体的真实样例",
+      "展示全身运动与物体交互"
+    ],
+    "content": "选取有一定移动范围的搬运片段，展示全身动作而非仅手部近景；确认对应模态完整。",
+    "source": "采集现场 + 对应的处理后 episode",
+    "replacement": "activity-transport.mp4",
+    "format": "第三人称 + 重建 · 横版短视频",
+    "width": 780,
+    "height": 560,
+    "theme": "light"
+  },
+  {
+    "id": "activity-interaction",
+    "name": "双人交互样例",
+    "title": "Human interaction",
+    "purpose": "展示多人动作与物体交互的空间关系。",
+    "lines": [
+      "双人交互的真实样例",
+      "说明共享场景中的动作关系"
+    ],
+    "content": "从已分享的双人重建素材中选取清晰片段，确认该片段可用于正式发布。",
+    "source": "研究团队提供的双人处理样例",
+    "replacement": "activity-interaction.mp4",
+    "format": "双人场景 / 重建 · 横版短视频",
+    "width": 780,
+    "height": 560,
+    "theme": "light"
+  },
+  {
+    "id": "pipeline-figure",
+    "name": "数据处理流程图",
+    "title": "From capture to a data sample",
+    "purpose": "说明多路原始信号如何经过对齐、处理与质检形成样本。",
+    "lines": [
+      "数据处理流程图",
+      "说明多路原始信号如何经过对齐、处理与质检形成样本。"
+    ],
+    "content": "需要最终处理脚本/流程说明、各路输入与时钟、时空标定方法、输出表示和质量筛选规则。区分测得信号与推断结果，并标明关键文件格式。",
+    "source": "论文草稿、正式处理结果与发布清单；现有采集材料作参考。",
+    "replacement": "pipeline-figure.svg",
+    "format": "可编辑矢量图或高清图；保持图内分区与图注对应。",
+    "width": 1200,
+    "height": 430,
+    "theme": "light",
+    "layout": "pipeline",
+    "panels": [
+      {
+        "name": "原始记录",
+        "meaning": "相机、动捕与时间戳"
+      },
+      {
+        "name": "时空对齐",
+        "meaning": "时间基准与空间坐标"
+      },
+      {
+        "name": "数据处理",
+        "meaning": "身体、手部与场景表示"
+      },
+      {
+        "name": "质检与导出",
+        "meaning": "有效片段、标注与文件"
+      }
+    ]
+  },
+  {
+    "id": "dataset-statistics",
+    "name": "发布数据分布图",
+    "title": "Released dataset statistics",
+    "purpose": "用实际发布清单说明覆盖范围、时长与数据划分。",
+    "lines": [
+      "发布数据分布图",
+      "用实际发布清单说明覆盖范围、时长与数据划分。"
+    ],
+    "content": "需要去重后的正式发布清单：episode ID、有效起止时间、任务类别、匿名主体 ID、场景 ID、有效模态、训练/验证/测试划分。先确认口径，再计算任务覆盖、时长和主体/场景分布。",
+    "source": "论文草稿、正式处理结果与发布清单；现有采集材料作参考。",
+    "replacement": "dataset-statistics.svg",
+    "format": "可编辑矢量图或高清图；保持图内分区与图注对应。",
+    "width": 1200,
+    "height": 480,
+    "theme": "light",
+    "layout": "statistics",
+    "panels": [
+      {
+        "name": "任务覆盖",
+        "meaning": "需要各类有效片段数与时长"
+      },
+      {
+        "name": "时长分布",
+        "meaning": "需要去重后的片段起止时间"
+      },
+      {
+        "name": "主体、场景与划分",
+        "meaning": "需要匿名 ID、场景标签与划分方案"
+      }
+    ]
+  },
+  {
+    "id": "contributors",
+    "name": "作者与机构标识",
+    "title": "Authors & affiliations",
+    "purpose": "准确呈现作者顺序、机构归属和获授权的标识。",
+    "lines": [
+      "经确认的作者、机构与标识",
+      "准确说明项目贡献与归属"
+    ],
+    "content": "使用论文最终作者顺序与机构名称，补充经允许使用的 SVG logo。正式项目名及 BibTeX 在论文确定后再加入。",
+    "source": "论文作者列表与各机构授权标识",
+    "replacement": "contributors.svg",
+    "format": "作者文本 + 机构 SVG 标识",
+    "width": 900,
+    "height": 320,
+    "theme": "light"
+  },
+  {
+    "id": "paper-overview",
+    "name": "研究总览图",
+    "title": "Research overview",
+    "purpose": "用同一动作串起采集现场、第一视角与身体运动。",
+    "lines": [
+      "研究总览图",
+      "用同一动作串起采集现场、第一视角与身体运动。"
+    ],
+    "content": "需要同一条代表性 episode 的现场照片、头部视角、测得的身体运动，并附样本 ID 和时间窗口。总览图只展示正式数据可提供的模态。",
+    "source": "论文草稿、正式处理结果与发布清单；现有采集材料作参考。",
+    "replacement": "paper-overview.svg",
+    "format": "可编辑矢量图或高清图；保持图内分区与图注对应。",
+    "width": 1000,
+    "height": 740,
+    "theme": "light",
+    "layout": "overview",
+    "panels": [
+      {
+        "name": "采集现场",
+        "meaning": "同一人物、动作与场景"
+      },
+      {
+        "name": "第一视角",
+        "meaning": "相机看到的动作与环境"
+      },
+      {
+        "name": "身体运动",
+        "meaning": "与画面对应的骨架和轨迹"
+      }
+    ]
+  },
+  {
+    "id": "capture-system",
+    "name": "采集系统标注图",
+    "title": "Annotated capture system",
+    "purpose": "解释设备如何佩戴，以及空间中的动捕系统测量什么。",
+    "lines": [
+      "采集系统标注图",
+      "解释设备如何佩戴，以及空间中的动捕系统测量什么。"
+    ],
+    "content": "需要全身佩戴正/侧面照片、设备近照、采集空间全景和经核对的传感器位置。标注 RoboCap、RoboWrist、身体标记点与动捕观测区域；不估填精度和规格。",
+    "source": "论文草稿、正式处理结果与发布清单；现有采集材料作参考。",
+    "replacement": "capture-system.svg",
+    "format": "可编辑矢量图或高清图；保持图内分区与图注对应。",
+    "width": 1200,
+    "height": 560,
+    "theme": "light",
+    "layout": "pair",
+    "panels": [
+      {
+        "name": "被试与可穿戴设备",
+        "meaning": "标注 RoboCap、RoboWrist 与身体标记点"
+      },
+      {
+        "name": "采集空间与动捕系统",
+        "meaning": "标注相机位置与观测区域；参数待确认"
+      }
+    ]
+  },
+  {
+    "id": "matched-modalities",
+    "name": "同片段多模态对照",
+    "title": "One episode, multiple representations",
+    "purpose": "用同一时间窗口检验相机画面与身体、手部、物体的对应关系。",
+    "lines": [
+      "同片段多模态对照",
+      "用同一时间窗口检验相机画面与身体、手部、物体的对应关系。"
+    ],
+    "content": "需要同一经过质检的 episode：头部/腕部视频、身体运动、手部追踪与物体/场景表示。提供共同时间窗口与坐标说明，不将不同录制拼成同步结果。",
+    "source": "论文草稿、正式处理结果与发布清单；现有采集材料作参考。",
+    "replacement": "matched-modalities.svg",
+    "format": "可编辑矢量图或高清图；保持图内分区与图注对应。",
+    "width": 1200,
+    "height": 700,
+    "theme": "light",
+    "layout": "sample",
+    "panels": [
+      {
+        "name": "全身与场景",
+        "meaning": "整体运动作为主画面"
+      },
+      {
+        "name": "头部相机",
+        "meaning": "第一视角观测"
+      },
+      {
+        "name": "腕部相机",
+        "meaning": "近手部交互"
+      },
+      {
+        "name": "手部追踪",
+        "meaning": "标注与画面对照"
+      },
+      {
+        "name": "物体运动",
+        "meaning": "物体姿态与交互"
+      }
+    ]
+  },
+  {
+    "id": "benchmark-protocol",
+    "name": "评测设计与结果",
+    "title": "Evaluation protocol and results",
+    "purpose": "明确输入、监督目标、数据划分与指标，再呈现可复核的结果。",
+    "lines": [
+      "评测设计与结果",
+      "明确输入、监督目标、数据划分与指标，再呈现可复核的结果。"
+    ],
+    "content": "需要论文确认的任务定义、输入模态、监督目标、评测单位、数据划分、基线与指标，以及可复核的结果文件。结果表标明指标方向和协议版本，缺失值留空。",
+    "source": "论文草稿、正式处理结果与发布清单；现有采集材料作参考。",
+    "replacement": "benchmark-protocol.svg",
+    "format": "可编辑矢量图或高清图；保持图内分区与图注对应。",
+    "width": 1200,
+    "height": 480,
+    "theme": "light",
+    "layout": "evaluation",
+    "panels": [
+      {
+        "name": "输入观测",
+        "meaning": "具体输入模态与可见信息"
+      },
+      {
+        "name": "参考目标",
+        "meaning": "经过质检的监督信号"
+      },
+      {
+        "name": "协议与结果",
+        "meaning": "划分、指标、基线及误差"
+      }
+    ]
+  },
+  {
+    "id": "capture-replay",
+    "name": "开发阶段多视角回放",
+    "title": "Development capture replay",
+    "purpose": "展示采集工具中的相机、骨架与标记点；不作为最终发布视频。",
+    "lines": [
+      "相机、骨架与标记点",
+      "开发阶段采集记录"
+    ],
+    "content": "现有 12 秒开发采集回放。该素材不证明最终重建精度，也不与 P03 样本混作同一录制。",
+    "source": "飞书 Ego2Motion Data Collection 文档",
+    "replacement": "capture-replay.mp4",
+    "format": "1280 × 696 MP4",
+    "width": 1280,
+    "height": 696,
+    "theme": "light"
+  },
+  {
+    "id": "hand-method-reference",
+    "name": "手部追踪方法演示",
+    "title": "Hand tracking",
+    "purpose": "展示手部关键点与多路真实相机画面的对应关系。",
+    "lines": [
+      "手部网格 + 相机重投影",
+      "呈现精细交互与跟踪结果"
+    ],
+    "content": "当前接入 GSI 在 Slack 分享的四视角手部关键点演示，来自野外采集片段，非 EgoMotion 动捕数据。最终数据集的手部重建样例仍待补充。",
+    "source": "GSI 在 Slack 分享的 Google Drive 方法演示；另附动捕数据上的后续预览原帖。",
+    "replacement": "hand-method-preview.mp4",
+    "format": "手部近景与重投影对照 · 待最终结果",
+    "width": 1000,
+    "height": 680,
+    "theme": "dark"
+  }
+]

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">同片段多模态对照</title><desc id="desc">用同一时间窗口检验相机画面与身体、手部、物体的对应关系。</desc>
+<rect width="1200" height="700" fill="#ffffff"/>
+<g font-family="Arial, PingFang SC, Microsoft YaHei, sans-serif">
+<text x="35" y="35" font-size="12" letter-spacing="1.3" fill="#72829a">图示占位</text>
+<text x="35" y="75" font-size="28" font-weight="500" fill="#2d3e54">同片段多模态对照</text>
+<text x="35" y="107" font-size="16" fill="#6c7889">用同一时间窗口检验相机画面与身体、手部、物体的对应关系。</text>
+<rect x="35" y="140" width="545" height="460" fill="#ffffff" stroke="#b8c7da" stroke-dasharray="5 5"/>
+<path d="M47 152L568 588M568 152L47 588" stroke="#e5ebf3" stroke-width="1"/>
+<rect x="49" y="154" width="28" height="25" fill="#ffffff"/>
+<text x="63" y="172" text-anchor="middle" font-size="12" fill="#647b9c">a</text>
+<rect x="47" y="322.0" width="521" height="110" fill="#ffffff"/>
+<text x="307.5" y="357.0" text-anchor="middle" fill="#354b68" font-size="23" font-weight="500">全身与场景</text>
+<text x="307.5" y="401.0" text-anchor="middle" fill="#667485" font-size="16" font-weight="400">整体运动作为主画面</text>
+<rect x="610" y="140" width="265" height="215" fill="#ffffff" stroke="#b8c7da" stroke-dasharray="5 5"/>
+<path d="M622 152L863 343M863 152L622 343" stroke="#e5ebf3" stroke-width="1"/>
+<rect x="624" y="154" width="28" height="25" fill="#ffffff"/>
+<text x="638" y="172" text-anchor="middle" font-size="12" fill="#647b9c">b</text>
+<rect x="622" y="199.5" width="241" height="110" fill="#ffffff"/>
+<text x="742.5" y="234.5" text-anchor="middle" fill="#354b68" font-size="20" font-weight="500">头部相机</text>
+<text x="742.5" y="278.5" text-anchor="middle" fill="#667485" font-size="16" font-weight="400">第一视角观测</text>
+<rect x="900" y="140" width="265" height="215" fill="#ffffff" stroke="#b8c7da" stroke-dasharray="5 5"/>
+<path d="M912 152L1153 343M1153 152L912 343" stroke="#e5ebf3" stroke-width="1"/>
+<rect x="914" y="154" width="28" height="25" fill="#ffffff"/>
+<text x="928" y="172" text-anchor="middle" font-size="12" fill="#647b9c">c</text>
+<rect x="912" y="199.5" width="241" height="110" fill="#ffffff"/>
+<text x="1032.5" y="234.5" text-anchor="middle" fill="#354b68" font-size="20" font-weight="500">腕部相机</text>
+<text x="1032.5" y="278.5" text-anchor="middle" fill="#667485" font-size="16" font-weight="400">近手部交互</text>
+<rect x="610" y="385" width="265" height="215" fill="#ffffff" stroke="#b8c7da" stroke-dasharray="5 5"/>
+<path d="M622 397L863 588M863 397L622 588" stroke="#e5ebf3" stroke-width="1"/>
+<rect x="624" y="399" width="28" height="25" fill="#ffffff"/>
+<text x="638" y="417" text-anchor="middle" font-size="12" fill="#647b9c">d</text>
+<rect x="622" y="444.5" width="241" height="110" fill="#ffffff"/>
+<text x="742.5" y="479.5" text-anchor="middle" fill="#354b68" font-size="20" font-weight="500">手部追踪</text>
+<text x="742.5" y="523.5" text-anchor="middle" fill="#667485" font-size="16" font-weight="400">标注与画面对照</text>
+<rect x="900" y="385" width="265" height="215" fill="#ffffff" stroke="#b8c7da" stroke-dasharray="5 5"/>
+<path d="M912 397L1153 588M1153 397L912 588" stroke="#e5ebf3" stroke-width="1"/>
+<rect x="914" y="399" width="28" height="25" fill="#ffffff"/>
+<text x="928" y="417" text-anchor="middle" font-size="12" fill="#647b9c">e</text>
+<rect x="912" y="444.5" width="241" height="110" fill="#ffffff"/>
+<text x="1032.5" y="479.5" text-anchor="middle" fill="#354b68" font-size="20" font-weight="500">物体运动</text>
+<text x="1032.5" y="523.5" text-anchor="middle" fill="#667485" font-size="16" font-weight="400">物体姿态与交互</text>
+<text x="35" y="669" font-size="13" fill="#8190a2"></text>
+</g></svg>
