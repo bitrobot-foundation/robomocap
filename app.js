@@ -142,7 +142,7 @@ function renderCoverage(){
   document.getElementById('action-count').textContent=catalog.total_primitives;
   document.getElementById('family-count').textContent=catalog.families.length;
   const facts=document.getElementById('overview-facts');
-  if(facts)facts.replaceChildren(...[[`${projectStats.hours} h`,zh?'录制时长':'recording hours'],[String(projectStats.participants),zh?'位参与者':'participants'],[`${Math.floor(projectStats.storage_gb/1000)}+ TB`,zh?'数据量':'data volume'],[`${Math.floor(catalog.total_primitives/10)*10}+`,zh?'已采集动作':'captured actions']].map(([value,label])=>{const item=document.createElement('p'),number=document.createElement('strong'),name=document.createElement('span');number.textContent=value;name.textContent=label;item.append(number,name);return item;}));
+  if(facts)facts.replaceChildren(...[[`${projectStats.hours} h`,zh?'录制时长':'recording hours'],[String(projectStats.participants),zh?'位参与者':'participants'],[`${Math.floor(projectStats.storage_gb/1000)}TB+`,zh?'数据量':'data volume'],[`${Math.floor(catalog.total_primitives/10)*10}+`,zh?'已采集动作':'captured actions']].map(([value,label])=>{const item=document.createElement('p'),number=document.createElement('strong'),name=document.createElement('span');number.textContent=value;name.textContent=label;item.append(number,name);return item;}));
   window.renderDistribution(catalog,i18n.locale,palette);
 }
 

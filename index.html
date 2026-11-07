@@ -10,14 +10,14 @@
   <link rel="preload" href="fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/instrument-serif-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css?v=20261105-3">
-  <script src="content-data.js?v=20261031-7" defer></script><script src="sequence-data.js" defer></script><script src="i18n.js?v=20261105-3" defer></script><script src="distribution.js?v=20261104-1" defer></script><script src="app.js?v=20261105-3" defer></script><script src="sequences.js?v=20261103-1" defer></script><script src="viewer-embed.js?v=20261104-2" defer></script>
+  <script src="content-data.js?v=20261107-1" defer></script><script src="sequence-data.js" defer></script><script src="i18n.js?v=20261105-3" defer></script><script src="distribution.js?v=20261104-1" defer></script><script src="app.js?v=20261107-1" defer></script><script src="sequences.js?v=20261103-1" defer></script><script src="viewer-embed.js?v=20261104-2" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><div class="nav-wrap">
   <a class="brand" href="#top" aria-label="RoboMoCap home"><span class="brand-symbol" aria-hidden="true"></span><span>RoboMoCap</span></a>
   <nav class="desktop-nav" aria-label="Main navigation"><a href="#overview">Overview</a><a href="#capture">System</a><a href="#processing">Pipeline</a><a href="#dataset">Dataset</a><a href="#interactive">Examples</a></nav>
-  <div class="nav-actions"><div class="language-switch" role="group" aria-label="Website language"><button data-language="en" aria-pressed="true" lang="en">EN</button><span aria-hidden="true">/</span><button data-language="zh" aria-pressed="false" lang="zh-CN">中</button></div><button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span></button><a class="nav-dataset" href="https://huggingface.co/datasets/BitRobot/robocap-body" target="_blank" rel="noopener noreferrer">Dataset ↗</a></div>
+  <div class="nav-actions"><div class="language-switch" role="group" aria-label="Website language"><button data-language="en" aria-pressed="true" lang="en">EN</button><span aria-hidden="true">/</span><button data-language="zh" aria-pressed="false" lang="zh-CN">中</button></div><button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span></button><a class="nav-dataset" href="https://huggingface.co/datasets/BitRobot/robomocap" target="_blank" rel="noopener noreferrer">Dataset ↗</a></div>
 </div><nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#overview">Overview</a><a href="#capture">System</a><a href="#processing">Pipeline</a><a href="#dataset">Dataset</a><a href="#interactive">Examples</a></nav></header>
 <main id="main">
   <section class="hero video-hero" id="top" aria-labelledby="project-title">
@@ -27,7 +27,7 @@
       <p class="hero-eyebrow">Egocentric Vision × High-Fidelity Whole-Body Motion</p>
       <h1 id="project-title">RoboMoCap</h1>
       <p class="hero-subtitle">A Large-Scale Whole-Body Motion Capture Dataset with Egocentric Vision for Robot Learning</p>
-      <div class="project-links"><a class="button button-primary" href="https://huggingface.co/datasets/BitRobot/robocap-body" target="_blank" rel="noopener noreferrer">Dataset ↗</a><a class="button button-secondary" href="#interactive">Interactive sample ↓</a><span class="resource-pending"><span>Code</span><small>Coming soon</small></span><span class="resource-pending"><span>Paper</span><small>Coming soon</small></span></div>
+      <div class="project-links"><a class="button button-primary" href="https://huggingface.co/datasets/BitRobot/robomocap" target="_blank" rel="noopener noreferrer">Dataset ↗</a><a class="button button-secondary" href="#interactive">Interactive sample ↓</a><span class="resource-pending"><span>Code</span><small>Coming soon</small></span><span class="resource-pending"><span>Paper</span><small>Coming soon</small></span></div>
     </div>
     <button class="hero-film-toggle" id="hero-film-toggle" aria-label="Pause background video" hidden>Ⅱ</button>
   </section>
@@ -199,7 +199,7 @@
 
     <section class="paper-section" id="dataset">
       <p class="section-kicker">Dataset organization</p><h2>Dataset <em>structure</em></h2>
-      <p><a class="dataset-link" href="https://huggingface.co/datasets/BitRobot/robocap-body" target="_blank" rel="noopener noreferrer">View dataset ↗</a></p>
+      <p><a class="dataset-link" href="https://huggingface.co/datasets/BitRobot/robomocap" target="_blank" rel="noopener noreferrer">View dataset ↗</a></p>
       <div class="prose"><p>RoboMoCap defines 290+ actions across eight categories, with a strong emphasis on locomotion and loco-manipulation. Activities range from walking, turning, and dynamic posture transitions to object transport, environmental interactions, and collaborative tasks.</p><p>The protocols introduce variations in movement speed, direction, terrain, object handling, and carrying configurations. Longer activities combine navigation, reaching, manipulation, and object placement into continuous whole-body motion sequences.</p></div>
       <div class="protocol-heading" id="collection"><h3>The action taxonomy</h3><p><strong id="action-count" data-localized>293</strong> captured actions <span>/</span> <strong id="family-count" data-localized>8</strong> families</p></div>
       <div class="family-navigation"><button class="family-scroll" id="family-prev" aria-label="Scroll categories left" aria-controls="family-list" disabled><span aria-hidden="true">←</span></button><div class="family-list" id="family-list" role="group" aria-label="Explore action families"><button data-family="all" aria-pressed="true" aria-controls="activity-cloud">All activities</button><button data-family="P" aria-pressed="false" aria-controls="activity-cloud">Locomotion</button><button data-family="D" aria-pressed="false" aria-controls="activity-cloud">Posture &amp; dynamics</button><button data-family="SM" aria-pressed="false" aria-controls="activity-cloud">Stationary manipulation</button><button data-family="LM" aria-pressed="false" aria-controls="activity-cloud">Locomotion &amp; manipulation</button><button data-family="DR" aria-pressed="false" aria-controls="activity-cloud">Dynamic recovery</button><button data-family="HH" aria-pressed="false" aria-controls="activity-cloud">Human–human interaction</button><button data-family="EC" aria-pressed="false" aria-controls="activity-cloud">Environment-coupled motion</button><button data-family="LH" aria-pressed="false" aria-controls="activity-cloud">Long-horizon tasks</button></div><button class="family-scroll" id="family-next" aria-label="Scroll categories right" aria-controls="family-list"><span aria-hidden="true">→</span></button></div>
