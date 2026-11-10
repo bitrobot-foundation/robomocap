@@ -385,3 +385,10 @@ html[lang=zh-CN] .capture-location h3 { font:400 32px/1.4 var(--sans); }
   html { scroll-behavior:auto; }
   *,*::before,*::after { animation:none!important; transition:none!important; }
 }
+
+#dataset { padding-bottom:48px; }
+#citation { padding-top:32px; border-top:1px solid var(--line); }
+.citation-code { margin:24px 0 0; padding:24px; overflow-x:auto; border:1px solid var(--line); border-radius:12px; background:var(--surface); color:var(--ink); font:13px/1.7 var(--mono); }
+
+#citation h2 { font-size:clamp(30px,3vw,40px); margin:0 0 16px; }
+.citation-code { white-space:pre-wrap; overflow-wrap:anywhere; }

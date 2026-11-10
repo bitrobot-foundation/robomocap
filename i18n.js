@@ -1,6 +1,8 @@
 'use strict';
 (() => {
   const pairs = [
+  ["Citation", "引用"],
+  ["If you use this dataset, please cite:", "如果您使用此数据集，请引用："],
   ["RoboMoCap home", "RoboMoCap 主页"],
   ["RoboMoCap interactive recording", "RoboMoCap 交互式录制"],
   ["Action examples", "动作示例"],
